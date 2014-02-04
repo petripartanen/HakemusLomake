@@ -32,7 +32,6 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-right main-navbar">
                 <ul class="nav navbar-nav">
-                    <li style="visibility: hidden"><a href="#hero-unit">hero-unit</a></li>
                     <li><a href="#about"><i class="fa fa-home"></i> About</a></li>
                     <li><a href="#form"><i class="fa fa-pencil-square-o"></i> Form</a></li>
                     <li><a href="#contact"><i class="fa fa-envelope-o"></i> Contact</a></li>
@@ -55,10 +54,10 @@
         <p>Karhukoplassa työskennellessäsi tulet ylläpitämään Metropolian tietotekniikan koulutusohjelman käyttämiä pilvipalveluita, kuten <a href="https://harjoittelu.edu.metropolia.fi/">Harjoittelu</a>, <a href="http://games.metropolia.fi/">Games</a>, <a href="https://webinssi.edu.metropolia.fi/login.php">Webinssi</a> ja monia muita. Osa ylläpidettävistä järjestelmistä on peräisin koululle oppilaiden kehittämien projekti- tai opinnäytetöiden tuloksena, näissä tilanteissa oppilaan valmistuttua kehitystyön jatkaminen on siirtynyt Karhukoplan vastuulle.</p>
         <p>Työtehtäviisi kuuluu myös täysin uusien sovellusten kehittäminen ja suunnittelu, joiden ideat tulevat lähinnä opettajilla tai heidän pyynnöstään. Karhukopla tarjoaa sinulle laajan mahdollisuuden kehittää omaa osaamistasi muun muassa <a href="http://fi.wikipedia.org/wiki/Drupal">Drupal -sisällönhallintajärjestelmän</a>, <a href="http://fi.wikipedia.org/wiki/Wordpress">Wordpress -julkaisualustan</a>, <a href="http://symfony.com/">Symfony -PHP sovelluskehyksen</a> parissa ja tarjoaa sinulle modernit työkalut ja kehitysympäristön.</p>
 
-        <h3>Etsimme:</h3>
+        <h2 id="lookingFor">Etsimme</h2>
         <p>Henkilöä joka on motivoitunut itse opiskelemaan ja kehittämään itsestään ammattitaitoisen ohjelmoijan. Oletamme kuitenkin hakijan osaavan ohjelmoinnin perusteet ja peruskäsitteet.</p>
 
-        <h3>Vaativuus ja haasteet</h3>
+        <h2 id="lookingFor">Vaativuus ja haasteet</h2>
         <p>Tarvitset työssäsi laajaa osaamista erilaisista sovelluskehitys tekniikoista ja työkaluja.</p>
 
         <dl class="dl-horizontal">
@@ -118,13 +117,17 @@
             <dd>Haluamme luoda tehokkaita järjestelmiä, joita on miellyttävä käyttää ja jotka palvevat meidän asikkaita: eli metropolian opiskelijoita ja henkilökuntaa.</dd>
         </dl>
 
+        <h2 id="workHours">Työaika</h2>
+        <p>Kevään aikana, tulet saamaan ohjeistusta ja konsultaatio tukea Ideja Oy:n toimesta.</p>
+        <p>Työsuhteesi on osa-aikainen ja kevään aikana työmäärä on 20tuntia viikossa. Kesällä, koulun päätyttyä, jatkat täyspäiväisenä.</p>
+
 
         <div class="page-header">
             <h1 id="form">Form <small>Työhakemuslomake</small></h1>
         </div>
 
         <form role="form">
-            <h3>Yhteystiedot</h3>
+            <h2>Yhteystiedot</h2>
             <div class="row">
                 <div class="col-sm-6 form-group">
                     <label for="fullName">Nimesi:</label>
@@ -147,7 +150,7 @@
                 </div>
             </div>
 
-            <h3>Hakemus</h3>
+            <h2>Hakemus</h2>
             <div class="row">
                 <div class="col-lg-12 form-group">
                     <label for="studies">Aiemmat opinnot:</label>
@@ -183,7 +186,7 @@
                 </div>
             </div>
 
-            <h3>Sosiaalinen media</h3>
+            <h2>Sosiaalinen media</h2>
             <!-- TODO: Korjaa! -->
             <div class="row social-media-urls">
                 <div class="col-lg-3 form-group">
