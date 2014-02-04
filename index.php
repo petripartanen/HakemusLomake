@@ -166,8 +166,12 @@
             <div class="row">
                 <div class="col-sm-6">
                     <h4 id="contact">Karhukopla</h4>
-                    <p><i class="fa fa-envelope-o"></i>: karhukopla@metropolia.fi</p>
-                    <p>Office: Vanha maantie 6, 02600 Espoo<br />2nd. floor, room A2130</p>
+                    <p>
+                        <a href="mailto:karhukopla@metropolia.fi"><i class="fa fa-envelope-o"></i></a> karhukopla@metropolia.fi <br />
+                        Vanha maantie 6, 02600 Espoo<br />
+                        2. kerros<br />
+                        huone A2130
+                    </p>
                 </div>
                 <div class="col-sm-6 text-right">
                     copyright &copy Tommi Keskitalo, 2014
