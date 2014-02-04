@@ -16,11 +16,11 @@
         <link href="css/custom.css" rel="stylesheet">
 
     </head>
-    <body>
+    <body data-spy="scroll" data-target=".main-navbar">
         <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".main-navbar">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -30,8 +30,9 @@
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
+            <div class="collapse navbar-collapse navbar-right main-navbar">
                 <ul class="nav navbar-nav">
+                    <li style="visibility: hidden"><a href="#hero-unit"></a></li>
                     <li><a href="#about"><i class="fa fa-home"></i> About</a></li>
                     <li><a href="#form"><i class="fa fa-pencil-square-o"></i> Form</a></li>
                     <li><a href="#contact"><i class="fa fa-envelope-o"></i> Contact</a></li>
@@ -41,7 +42,7 @@
         </div>
         <!-- /.container -->
     </nav>
-    <div class="hero-unit">
+    <div class="hero-unit" id="hero-unit">
         <div class="container">
             <h1>Karhukopla - Paras kesätyö</h1>
         </div>
