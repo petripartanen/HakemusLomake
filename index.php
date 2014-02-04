@@ -103,6 +103,24 @@
             </li>
         </ul>
 
+        <dl class="dl-horizontal">
+            <dt>Jira</dt>
+            <dd>Ketterät kehitysmenetelmät, Koodin katselmointi & suunnittelu <br/>... ja dokumentointi</dd>
+        </dl>
+        <dl class="dl-horizontal">
+            <dt>SVN</dt>
+            <dd>Keskitetty koodinhallinta, Continuous Integration / SVN <br />
+                CI-palvelimen käyttö & versionhallinta. Buildien hallinta ja raportointi (ja niiden ymmärtäminen)</dd>
+        </dl>
+        <dl class="dl-horizontal">
+            <dt>Palvelinylläpito</dt>
+            <dd>Windows- ja Linux-palvelin</dd>
+        </dl>
+        <dl class="dl-horizontal">
+            <dt>Symfony2</dt>
+            <dd>Testausympäristö (Symfony2 ja Zend -projektit): PHPunit, testien kirjoittaminen ja ajaminen</dd>
+        </dl>
+
         <h3>Etsimme:</h3>
         <p>Henkilöä joka on motivoitunut itse opiskelemaan ja kehittämään itsestään ammattitaitoisen ohjelmoijan. Oletamme kuitenkin hakijan osaavan ohjelmoinnin perusteet ja peruskäsitteet.</p>
 
@@ -110,6 +128,27 @@
         <div class="page-header">
             <h1 id="form">Form</a> <small>Työhakemuslomake</small></h1>
         </div>
+        <form role="form">
+            <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+            </div>
+                <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputFile">File input</label>
+                <input type="file" id="exampleInputFile">
+                <p class="help-block">Example block-level help text here.</p>
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox"> Check me out
+                </label>
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+        </form>
     </div>
     </body>
     <script src="bower_components/jquery/jquery.min.js"></script>
