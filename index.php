@@ -140,13 +140,9 @@
             </div>
 
             <div class="row">
-                <div class="col-sm-6 form-group">
+                <div class="col-sm-12 form-group">
                     <label for="email">Sähköposti:</label>
                     <input type="text" class="form-control" id="email" name="email" placeholder="Anna sähköposti">
-                </div>
-                <div class="col-sm-6 form-group">
-                    <label for="studentId">Opiskelijanumerosi:</label>
-                    <input type="email" class="form-control" id="studentId" placeholder="Anna opiskelijanumero">
                 </div>
             </div>
 
@@ -167,7 +163,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-12 form-group">
-                    <label for="alternative-experiences">Työkokemus/projektiosaaminen:</label>
+                    <label for="alternative-experiences">Työkokemus & Projektiosaaminen:</label>
                     <textarea class="form-control" rows="3" id="alternative-experiences" name="alternative-experiences"></textarea>
                     <span class="help-block">Missä projekteissa olet ollut mukana, onko sinulla jotain muuta ohjelmistoalan kokemusta?</span>
                 </div>
@@ -187,38 +183,52 @@
             </div>
 
             <h2>Sosiaalinen media</h2>
-            <!-- TODO: Korjaa! -->
-            <div class="row social-media-urls">
-                <div class="col-lg-3 form-group">
-                    <label for="bitbucket"><i class="fa fa-bitbucket"></i></label>
-                    <input type="text" id="bitbucket" placeholder="bitbucket">
-                </div>
-                <div class="col-lg-3 form-group">
-                    <label for="github"><i class="fa fa-github"></i></label>
-                    <input type="text" id="github" placeholder="github">
-                </div>
-                <div class="col-lg-3 form-group">
-                    <label for="twitter"><i class="fa fa-twitter"></i></label>
-                    <input type="text" id="twitter" placeholder="twitter">
-                </div>
-                <div class="col-lg-3 form-group">
-                    <label for="linkedin"><i class="fa fa-linkedin"></i></label>
-                    <input type="text" id="linkedin" placeholder="linkedin">
-                </div>
-            </div>
-
+            <p>Voit halutessasi lisätä URL-osoitteen profiiliisi. Tieto ei ole pakollinen</p>
             <div class="row">
-                <div class="col-lg-12 form-group">
-                    <div class="checkbox">
-                        <label>
-                            <input type="checkbox"> Varmistan, että antamani tiedot pitävät paikkansa.
-                        </label>
+                <div class="col-lg-4 form-group">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-linkedin"></i></span>
+                        <input type="text" class="form-control" id="linkedin" placeholder="https://www.linkedin.com/">
+                    </div>
+                </div>
+                <div class="col-lg-4 form-group">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-facebook"></i></span>
+                        <input type="text" class="form-control" id="facebook" placeholder="https://www.facebook.com/">
+                    </div>
+                </div>
+
+                <div class="col-lg-4 form-group">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-twitter"></i></span>
+                        <input type="text" class="form-control" id="twitter" placeholder="https://twitter.com/">
                     </div>
                 </div>
             </div>
 
             <div class="row">
-                <div class="col-lg-12 text-right">
+                <div class="col-lg-4 form-group">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-bitbucket"></i></span>
+                        <input type="text" class="form-control" id="bitbucket" placeholder="https://bitbucket.org/">
+                    </div>
+                </div>
+                <div class="col-lg-4 form-group">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-github"></i></span>
+                        <input type="text" class="form-control" id="github" placeholder="https://github.com/">
+                    </div>
+                </div>
+                <div class="col-lg-4 form-group">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-stack-overflow"></i></span>
+                        <input type="text" class="form-control" id="stack-overflow" placeholder="https://stackoverflow.com/">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
                     <button type="submit" class="btn btn-default">Lähetä hakemus</button>
                 </div>
             </div>
@@ -228,8 +238,13 @@
     <footer>
         <div class="container">
             <div class="row">
+                <div class="col-lg-12">
+                    <h2 id="contact">Yhteystiedot</h2>
+                </div>
+            </div>
+            <div class="row">
                 <div class="col-sm-6">
-                    <h4 id="contact">Karhukopla</h4>
+                    <h4>Karhukopla</h4>
                     <p>
                         <a href="mailto:karhukopla@metropolia.fi"><i class="fa fa-envelope-o"></i> karhukopla@metropolia.fi </a><br />
                         Vanha maantie 6, 02600 Espoo<br />

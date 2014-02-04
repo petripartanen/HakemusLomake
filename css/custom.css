@@ -12,6 +12,6 @@ footer {
     padding-bottom: 60px;
 }
 
-.social-media-urls label {
-    font-size: 32px;
+.input-group-addon {
+    font-size: larger;
 }
