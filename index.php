@@ -183,6 +183,27 @@
                 </div>
             </div>
 
+            <h3>Sosiaalinen media</h3>
+            <!-- TODO: Korjaa! -->
+            <div class="row social-media-urls">
+                <div class="col-lg-3 form-group">
+                    <label for="bitbucket"><i class="fa fa-bitbucket"></i></label>
+                    <input type="text" id="bitbucket" placeholder="bitbucket">
+                </div>
+                <div class="col-lg-3 form-group">
+                    <label for="github"><i class="fa fa-github"></i></label>
+                    <input type="text" id="github" placeholder="github">
+                </div>
+                <div class="col-lg-3 form-group">
+                    <label for="twitter"><i class="fa fa-twitter"></i></label>
+                    <input type="text" id="twitter" placeholder="twitter">
+                </div>
+                <div class="col-lg-3 form-group">
+                    <label for="linkedin"><i class="fa fa-linkedin"></i></label>
+                    <input type="text" id="linkedin" placeholder="linkedin">
+                </div>
+            </div>
+
             <div class="row">
                 <div class="col-lg-12 form-group">
                     <div class="checkbox">
