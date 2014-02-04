@@ -12,6 +12,13 @@ footer {
     padding-bottom: 60px;
 }
 
-.input-group-addon {
-    font-size: larger;
+body {
+    font-size: 18px;
+}
+
+.inner-content-wrapper {
+    margin-bottom: 55%;
+}
+fieldset {
+    margin-top: 3em;
 }
