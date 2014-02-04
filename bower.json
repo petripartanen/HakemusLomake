@@ -1,0 +1,22 @@
+{
+  "name": "hakemus",
+  "version": "0.0.0",
+  "authors": [
+    "Tommi Keskitalo <tommi.keskitalo@ideja.fi>"
+  ],
+  "description": "Hakemus",
+  "main": "index.php",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "~4.0.3",
+    "angularjs": "*",
+    "bootstrap": "~3.1.0"
+  }
+}
