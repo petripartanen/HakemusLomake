@@ -32,7 +32,7 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-right main-navbar">
                 <ul class="nav navbar-nav">
-                    <li style="visibility: hidden"><a href="#hero-unit"></a></li>
+                    <li style="visibility: hidden"><a href="#hero-unit">hero-unit</a></li>
                     <li><a href="#about"><i class="fa fa-home"></i> About</a></li>
                     <li><a href="#form"><i class="fa fa-pencil-square-o"></i> Form</a></li>
                     <li><a href="#contact"><i class="fa fa-envelope-o"></i> Contact</a></li>
@@ -59,41 +59,65 @@
         <p>Henkilöä joka on motivoitunut itse opiskelemaan ja kehittämään itsestään ammattitaitoisen ohjelmoijan. Oletamme kuitenkin hakijan osaavan ohjelmoinnin perusteet ja peruskäsitteet.</p>
 
         <h3>Vaativuus ja haasteet</h3>
-        <p>Tarvitset työssäsi laajaa osaamista erilaisista sovelluskehitys tekniikoista.</p>
+        <p>Tarvitset työssäsi laajaa osaamista erilaisista sovelluskehitys tekniikoista ja työkaluja.</p>
 
         <dl class="dl-horizontal">
             <dt>Jira</dt>
-            <dd>Ketterät kehitysmenetelmät, Koodin katselmointi, suunnittelu <br/>... ja dokumentointi</dd>
+            <dd>Käytämme kehityksessä ketteriä kehitysmenetelmiä. Jiran avulla suunnittelemme ja seuraamme sovelluksen kehitystä:
+                Hallitsemme version julkaisuja, bugiraportteja ja viikottaisien Sprinttien sisältöä.</dd>
         </dl>
+
         <dl class="dl-horizontal">
             <dt>SVN/Git</dt>
-            <dd>Keskitetty koodinhallinta, Continuous Integration / SVN /Git <br />
-                CI-palvelimen käyttö & versionhallinta. Buildien hallinta ja raportointi (ja niiden ymmärtäminen)</dd>
+            <dd>Versiohallinta antaa mahdollisuuden keskitettyyn koodinhallintaan ja yhtäaikaiseen työskentelyyn.</dd>
         </dl>
+
+        <dl class="dl-horizontal">
+            <dt>Jenkins</dt>
+            <dd>Automatisointi pavelu, joka buildaa projektit, ajaa testit ja päivittää testisivut jokaisen päivityksen jälkeen.</dd>
+        </dl>
+
         <dl class="dl-horizontal">
             <dt>Palvelinylläpito</dt>
-            <dd>Karhukoplalla on omia palvelimia: CI-pavelin, kehityspavelin ja eristetty tuotantoympäristö</dd>
-        </dl>
-        <dl class="dl-horizontal">
-            <dt>Symfony2</dt>
-            <dd>Uusien projektien kanssa olemme käyttäneet hyvien ohjelmistotapojen mukaisia käytäntöjä. <br />
-                Testausympäristö (Symfony2 ja Zend -projektit): PHPunit, testien kirjoittaminen ja ajaminen</dd>
+            <dd>Karhukoplalla on useita palvelimia: CI-pavelin, kehityspavelin, asiakastesti ja eristetty tuotantoympäristö</dd>
         </dl>
 
         <dl class="dl-horizontal">
             <dt>Lecacy-koodi</dt>
-            <dd>Lecacy järjestelmien ylläpito vaatii MySQL-osaamista ja perus funktionaalista PHP:tä</dd>
+            <dd>Ylläpitotehtäviä vanhempiin järjestelmiin, jotka ovat pääosin functionaalisista PHP:tä, Yleensä työtehtävät vaativat refactoroimista tai kantapäivityksiä.</dd>
+        </dl>
+
+        <dl class="dl-horizontal">
+            <dt>Symfony</dt>
+            <dd>PHP -ohjelmistokehys, joka antaa rungon sovellukselle ja tarjoaa paljon valmiita komponentteja: PHPUnit, Doctrine, Twig, jne...</dd>
+        </dl>
+
+        <dl class="dl-horizontal">
+            <dt>Testivetoinen kehitys</dt>
+            <dd>TDD:n idea on kirjoittaa sovellukselle testejä ennen varsinaisen koodin kirjoittamista. <br />
+                Ja testien tulee mennä läpi, kun toiminnallisuus on toteutettu oikein.</dd>
         </dl>
 
         <dl class="dl-horizontal">
             <dt>Käyttöliittymät</dt>
-            <dd>Javascript, grafiikka, layout-suunnitelu</dd>
+            <dd>Käyttöliittymä suunnittelu on nykyisin iso osa ohjelmistokehitystä. Web-sovellukset käyttävät paljon eri javascript kirjastoja (jQuery, AngularJS, Bootstrap, Foundation), käyttöliittymäkehyksiä ja kehityksessä on huomioitava myös mobiililaitteet.</dd>
+        </dl>
+
+        <dl class="dl-horizontal">
+            <dt>Zurb Foundation</dt>
+            <dd>Responsiivinen käyttöliittymäkehys.</dd>
         </dl>
 
         <dl class="dl-horizontal">
             <dt>Julkaisualustat</dt>
-            <dd>Wordpress, drupal ja Joomla</dd>
+            <dd>Wordpress ja drupal</dd>
         </dl>
+
+        <dl class="dl-horizontal">
+            <dt>käyttäjäläheisyys</dt>
+            <dd>Haluamme luoda tehokkaita järjestelmiä, joita on miellyttävä käyttää ja jotka palvevat meidän asikkaita: eli metropolian opiskelijoita ja henkilökuntaa.</dd>
+        </dl>
+
 
         <div class="page-header">
             <h1 id="form">Form <small>Työhakemuslomake</small></h1>
@@ -101,7 +125,6 @@
 
         <form role="form">
             <h3>Yhteystiedot</h3>
-
             <div class="row">
                 <div class="col-sm-6 form-group">
                     <label for="fullName">Nimesi:</label>
@@ -124,7 +147,28 @@
                 </div>
             </div>
 
-            <h3>Yleistä</h3>
+            <h3>Hakemus</h3>
+            <div class="row">
+                <div class="col-lg-12 form-group">
+                    <label for="studies">Aiemmat opinnot:</label>
+                    <textarea class="form-control" rows="3" id="studies" name="studies"></textarea>
+                    <span class="help-block">Suoritetut ohjelmointikurssit, muut opinnot ja itseopiskelut</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 form-group">
+                    <label for="experiences">Web-ohjelmointi kokemus:</label>
+                    <textarea class="form-control" rows="3" id="experiences" name="experiences"></textarea>
+                    <span class="help-block">Lyhyesti, mitä olet tehnyt, millä tekniikoilla ja millaisia kehitystyökalut tunnet entuudestaan.</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 form-group">
+                    <label for="alternative-experiences">Työkokemus/projektiosaaminen:</label>
+                    <textarea class="form-control" rows="3" id="alternative-experiences" name="alternative-experiences"></textarea>
+                    <span class="help-block">Missä projekteissa olet ollut mukana, onko sinulla jotain muuta ohjelmistoalan kokemusta?</span>
+                </div>
+            </div>
             <div class="row">
                 <div class="col-lg-12 form-group">
                     <label for="hobbies">Harrastukset:</label>
@@ -133,14 +177,9 @@
             </div>
             <div class="row">
                 <div class="col-lg-12 form-group">
-                    <label for="studies">Aiemmat opinnot:</label>
-                    <textarea class="form-control" rows="3" id="studies" name="studies"></textarea>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12 form-group">
-                    <label for="skills">Erikoisosaaminen:</label>
+                    <label for="skills">Erikoisosaaminen / muut taidot:</label>
                     <textarea class="form-control" rows="3" id="skills" name="skills"></textarea>
+                    <span class="help-block">Esim. olet loistava animoija, piirtäjä, hallitset linux-ylläpidon erinomaisesti tai erikoistunut tietoturvaratkaisuihin</span>
                 </div>
             </div>
 
@@ -168,7 +207,7 @@
                 <div class="col-sm-6">
                     <h4 id="contact">Karhukopla</h4>
                     <p>
-                        <a href="mailto:karhukopla@metropolia.fi"><i class="fa fa-envelope-o"></i></a> karhukopla@metropolia.fi <br />
+                        <a href="mailto:karhukopla@metropolia.fi"><i class="fa fa-envelope-o"></i> karhukopla@metropolia.fi </a><br />
                         Vanha maantie 6, 02600 Espoo<br />
                         2. kerros<br />
                         huone A2130
