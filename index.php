@@ -33,9 +33,9 @@
             <div class="collapse navbar-collapse navbar-right main-navbar">
                 <ul class="nav navbar-nav">
                     <li style="visibility: hidden;"><a href="#hero-unit">hero-unit</a></li>
-                    <li><a href="#about"><i class="fa fa-home"></i> About</a></li>
-                    <li><a href="#form"><i class="fa fa-pencil-square-o"></i> Form</a></li>
-                    <li><a href="#contact"><i class="fa fa-envelope-o"></i> Contact</a></li>
+                    <li><a href="#about"><i class="fa fa-home"></i> Tietoa meistä</a></li>
+                    <li><a href="#form"><i class="fa fa-pencil-square-o"></i> Lomake</a></li>
+                    <li><a href="#contact"><i class="fa fa-envelope-o"></i> Yhteystiedot</a></li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -52,18 +52,30 @@
     <div class="container">
         <div class="content-wrapper">
             <div class="page-header">
-                <h1 id="about">About <small>Työpaikka</small></h1>
+                <h1 id="about">Tietoa meistä <small>avoimet työpaikat</small></h1>
             </div>
 
-            <p>Metropolia etsii teknikkan opiskelijoista Leppävaaran toimipisteeseen harjoittelijoita.</p>
-            <p>Jos olet halukas tekemään alan töitä koulun ohella ja olet motivoitunut itse opiskelemaan ja kehittämään itsestään ammattitaitoisen ohjelmoijan.</p>
+            <p class="lead">Metropolia etsii kolmea teknikkan toisenvuoden opiskelijaa Leppävaaran toimipisteeseen harjoittelijoiksi.</p>
+            <p>Toimisto sijaitsee A puolen toisessa kerroksessa Metropolian leppävaaran toimitiloissa. Työnkuva on Web-sovellusten kehittäminen oppimisen tueksi. Pääset mahdollisuuden toteuttamaan itseäsi ja saat laajan kokemuksen eri ohjelmistotekniikoista. Työskentely on monipuolista ja voit itse vaikuttaa siihen, mitä ja miten teet.</p>
+            <p>Pääset alottamaan työt heti ja kesällä sinulle tarjotaan mahdollisuutta työskennellä myös täyspäiväisesti.</p>
+            <p>Miksi hakea?</p>
+            <ul>
+                <li>Saat ohjelmistoalan työkokemusta</li>
+                <li>Joustava työaika</li>
+                <li>Itseohjautuvaa ryhmätyöskentelyä</li>
+                <li>Etätyömahdollisuudet</li>
+                <li>Voit kontrolloida omaa työtaakkaa jaksoittain</li>
+                <li>Kuukausipalkka ei vaikuta Kelan opintotuen saantiin (vuositasolla alle tukirajan)</li>
+                <li>Työ tukee opintoja, koska pääset soveltamaan oppimaasi heti oikeassa työympäristössä</li>
+                <li>20 tuntia viikossa, eli 4tuntia päivässä</li>
+            </ul>
         </div>
 
         <div class="content-wrapper">
             <h2>Työnkuva</h2>
-            <p>Karhukoplassa työskennellessäsi tulet ylläpitämään Metropolian tietotekniikan koulutusohjelman käyttämiä pilvipalveluita, kuten <a href="https://harjoittelu.edu.metropolia.fi/">Harjoittelu</a>, <a href="http://games.metropolia.fi/">Games</a>, <a href="https://webinssi.edu.metropolia.fi/login.php">Webinssi</a> ja monia muita. Osa ylläpidettävistä järjestelmistä on peräisin koululle oppilaiden kehittämien projekti- tai opinnäytetöiden tuloksena, näissä tilanteissa oppilaan valmistuttua kehitystyön jatkaminen on siirtynyt Karhukoplan vastuulle.</p>
+            <p>Karhukoplassa työskennellessäsi tulet ylläpitämään Metropolian tietotekniikan koulutusohjelman käyttämiä pilvipalveluita, kuten <a href="https://harjoittelu.edu.metropolia.fi/">Harjoittelu</a>, <a href="http://games.metropolia.fi/">Games</a>, <a href="https://webinssi.edu.metropolia.fi/login.php">Webinssi</a>. Osa ylläpidettävistä järjestelmistä on peräisin koululle oppilaiden kehittämien projekti- tai opinnäytetöiden tuloksena, näissä tilanteissa oppilaan valmistuttua kehitystyön jatkaminen on siirtynyt Karhukoplan vastuulle.</p>
             <p>Työtehtäviisi kuuluu myös täysin uusien sovellusten kehittäminen ja suunnittelu, joiden ideat tulevat lähinnä opettajilla tai heidän pyynnöstään.</p>
-            <p>Karhukopla tarjoaa sinulle hyvän mahdollisuuden kehittää omaa osaamistasi muun muassa <a href="http://fi.wikipedia.org/wiki/Drupal">Drupal -sisällönhallintajärjestelmän</a>, <a href="http://fi.wikipedia.org/wiki/Wordpress">Wordpress -julkaisualustan</a>, <a href="http://symfony.com/">Symfony -PHP sovelluskehyksen</a> ja monien muiden kanssa ja tarjoaa sinulle modernit työkalut ja kehitysympäristön siihen.</p>
+            <p>Karhukopla tarjoaa sinulle hyvän mahdollisuuden kehittää omaa osaamistasi muun muassa <a href="http://fi.wikipedia.org/wiki/Drupal">Drupal -sisällönhallintajärjestelmän</a>, <a href="http://fi.wikipedia.org/wiki/Wordpress">Wordpress -julkaisualustan</a>, <a href="http://symfony.com/">Symfony -PHP sovelluskehyksen</a> ja tarjoaa sinulle modernit työkalut ja kehitysympäristön siihen.</p>
         </div>
         <div class="content-wrapper">
             <h2>Vaativuus ja haasteet</h2>
@@ -126,18 +138,12 @@
                 <dd>Haluamme luoda tehokkaita järjestelmiä, joita on miellyttävä käyttää ja jotka palvevat meidän asikkaita: eli metropolian opiskelijoita ja henkilökuntaa.</dd>
             </dl>
         </div>
-
-        <div class="content-wrapper">
-            <h2 id="workHours">Työaika</h2>
-            <p>Kevään aikana, tulet saamaan ohjeistusta ja konsultaatio tukea Ideja Oy:n toimesta.</p>
-            <p>Työsuhteesi on osa-aikainen ja kevään aikana työmäärä on 20tuntia viikossa. Kesällä, koulun päätyttyä, jatkat täyspäiväisenä.</p>
-        </div>
     </div>
     <div class="container">
         <div class="content-wrapper">
 
             <div class="page-header">
-                <h1 id="form">Form <small>Työhakemuslomake</small></h1>
+                <h1 id="form">Lomake</h1>
             </div>
 
             <form role="form" method="post" action="fill.php">
@@ -285,7 +291,7 @@ Olen ahkera ja korkeasti motivoitunut oppimaan. Haluan työskennellä web-graafi
     <div class="container">
         <div class="content-wrapper">
             <div class="page-header">
-                <h1 id="contact">Contact <small>Karhukoplan yhteystiedot</small></h1>
+                <h1 id="contact">Yhteystiedot <small>Karhukopla</small></h1>
             </div>
             <p>
                 <a href="mailto:karhukopla@metropolia.fi"><i class="fa fa-envelope-o"></i> karhukopla@metropolia.fi </a><br />
