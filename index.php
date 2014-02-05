@@ -181,7 +181,7 @@
                                 <div class="col-lg-12 form-group">
                                     <label for="studies">Aiemmat opinnot:</label>
                                     <textarea class="form-control" rows="3" id="studies" name="studies" placeholder="
-    Suoritin ICT-asentajan ammattitutkinnon, jonka aikana opiskelin ohjelmoinnin perusteet. Metropoliassa olen suorittanut Javan ja web-ohjelmoinnin kursseja.
+Suoritin ICT-asentajan ammattitutkinnon, jonka aikana opiskelin ohjelmoinnin perusteet. Metropoliassa olen suorittanut Javan ja web-ohjelmoinnin kursseja.
                                     "></textarea>
                                     <span class="help-block">Suoritetut ohjelmointikurssit, muut opinnot ja itseopiskelut</span>
                                 </div>
@@ -190,7 +190,7 @@
                                 <div class="col-lg-12 form-group">
                                     <label for="experiences">Web-ohjelmointi kokemus:</label>
                                     <textarea class="form-control" rows="3" id="experiences" name="experiences" placeholder="
-    Web-ohjelmointi kurssilla tein projektityönä HTML5-sivun, jonka suunnittelussa keskityin mobiililaitteiden yhteensopivuuteen. Sivusto löytyy nykyisin osoitteesta: http://users.metropolia.fi/~kimmokood/projekti
+Web-ohjelmointi kurssilla tein projektityönä HTML5-sivun, jonka suunnittelussa keskityin mobiililaitteiden yhteensopivuuteen. Sivusto löytyy nykyisin osoitteesta: http://users.metropolia.fi/~kimmokood/projekti
                                     "></textarea>
                                     <span class="help-block">Lyhyesti, mitä olet tehnyt, millä tekniikoilla ja millaisia kehitystyökalut tunnet entuudestaan.</span>
                                 </div>
@@ -199,7 +199,7 @@
                                 <div class="col-lg-12 form-group">
                                     <label for="alternative-experiences">Muu työkokemus & projektiosaaminen:</label>
                                     <textarea class="form-control" rows="3" id="alternative-experiences" name="alternative-experiences" placeholder="
-    Olen työskennellyt osa-aikaisena puhelinmyyjänä kaksi vuotta. Lisäksi Kävin Innovaatiokurssilla Belgiassa, jonka aikana selvitimme ympäristön vaikutusta oppimiseen.
+Olen työskennellyt osa-aikaisena puhelinmyyjänä kaksi vuotta. Lisäksi Kävin Innovaatiokurssilla Belgiassa, jonka aikana selvitimme ympäristön vaikutusta oppimiseen.
                                     "></textarea>
                                     <span class="help-block">Missä projekteissa olet ollut mukana, onko sinulla jotain muuta ohjelmistoalan kokemusta?</span>
                                 </div>
