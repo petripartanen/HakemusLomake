@@ -146,17 +146,21 @@
                     <div class="row">
                         <div class="col-sm-6 form-group">
                             <label for="fullName">Nimesi:</label>
-                            <input type="text" class="form-control" id="fullName" name="fullName" />
+                            <input type="text" class="form-control" id="fullName" name="fullName" placeholder="Kimmo Koodari"/>
                         </div>
                         <div class="col-sm-6 form-group">
                             <label for="group">Luokkatunnus:</label>
-                            <input type="email" class="form-control" id="group" name="group" />
+                            <input type="email" class="form-control" id="group" name="group" placeholder="TT12S1E"/>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-sm-12 form-group">
+                        <div class="col-sm-6 form-group">
+                            <label for="userid">käyttäjätunnus:</label>
+                            <input type="text" class="form-control" id="userid" name="userid" placeholder="kimmokood" />
+                        </div>
+                        <div class="col-sm-6 form-group">
                             <label for="email">Sähköposti:</label>
-                            <input type="text" class="form-control" id="email" name="email" />
+                            <input type="text" class="form-control" id="email" name="email" placeholder="kimmo.koodari@metropolia.fi" />
                         </div>
                     </div>
                 </fieldset>
@@ -167,21 +171,27 @@
                         <div class="row">
                             <div class="col-lg-12 form-group">
                                 <label for="studies">Aiemmat opinnot:</label>
-                                <textarea class="form-control" rows="3" id="studies" name="studies"></textarea>
+                                <textarea class="form-control" rows="3" id="studies" name="studies" placeholder="
+Suoritin ICT-asentajan ammattitutkinnon, jonka aikana opiskelin ohjelmoinnin perusteet. Metropoliassa olen suorittanut Javan ja web-ohjelmoinnin kursseja.
+                                "></textarea>
                                 <span class="help-block">Suoritetut ohjelmointikurssit, muut opinnot ja itseopiskelut</span>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-lg-12 form-group">
                                 <label for="experiences">Web-ohjelmointi kokemus:</label>
-                                <textarea class="form-control" rows="3" id="experiences" name="experiences"></textarea>
+                                <textarea class="form-control" rows="3" id="experiences" name="experiences" placeholder="
+Web-ohjelmointi kurssilla tein projektityönä HTML5-sivun, jonka suunnittelussa keskityin mobiililaitteiden yhteensopivuuteen. Sivusto löytyy nykyisin osoitteesta: http://users.metropolia.fi/~kimmokood/projekti
+                                "></textarea>
                                 <span class="help-block">Lyhyesti, mitä olet tehnyt, millä tekniikoilla ja millaisia kehitystyökalut tunnet entuudestaan.</span>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-lg-12 form-group">
                                 <label for="alternative-experiences">Muu työkokemus & projektiosaaminen:</label>
-                                <textarea class="form-control" rows="3" id="alternative-experiences" name="alternative-experiences"></textarea>
+                                <textarea class="form-control" rows="3" id="alternative-experiences" name="alternative-experiences" placeholder="
+Olen työskennellyt osa-aikaisena puhelinmyyjänä kaksi vuotta. Lisäksi Kävin Innovaatiokurssilla Belgiassa, jonka aikana selvitimme ympäristön vaikutusta oppimiseen.
+                                "></textarea>
                                 <span class="help-block">Missä projekteissa olet ollut mukana, onko sinulla jotain muuta ohjelmistoalan kokemusta?</span>
                             </div>
                         </div>
@@ -191,20 +201,26 @@
                         <div class="row">
                             <div class="col-lg-12 form-group">
                                 <label for="hobbies">Harrastukset:</label>
-                                <textarea class="form-control" rows="3" id="hobbies" name="hobbies"></textarea>
+                                <textarea class="form-control" rows="3" id="hobbies" name="hobbies" placeholder="
+Olen harrastanut 7-vuotta piirtämistä ja viime vuonna aloitin opettelemaan korttitemppuja.
+                                "></textarea>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-lg-12 form-group">
                                 <label for="skills">Erikoisosaaminen / muut taidot:</label>
-                                <textarea class="form-control" rows="3" id="skills" name="skills"></textarea>
-                                <span class="help-block">Esim. olet loistava animoija, piirtäjä, hallitset linux-ylläpidon erinomaisesti tai erikoistunut tietoturvaratkaisuihin</span>
+                                <textarea class="form-control" rows="3" id="skills" name="skills" placeholder="
+Olen sosiaalinen ja avoin ihminen. Tulen toimeen hyvin eri persoonien kanssa ja olen hyvä tuottamaan moninaista grafiikkaa.
+                                "></textarea>
+                                <span class="help-block">Esim. olet loistava animoija, hallitset linux-ylläpidon erinomaisesti tai erikoistunut tietoturvaratkaisuihin</span>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-lg-12 form-group">
                                 <label for="skills">Miksi haluat Metropolialle töihin?</label>
-                                <textarea class="form-control" rows="3" id="skills" name="skills"></textarea>
+                                <textarea class="form-control" rows="3" id="skills" name="skills" placeholder="
+Olen ahkera ja korkeasti motivoitunut oppimaan. Haluan työskennellä web-graafikokkona ja minulla on aina ollut korkea työmoraali. Uskon että kykenen kirjoittamaan laadukasta koodia.
+                                "></textarea>
                                 <span class="help-block">Perustele lyhyesti, miksi juuri sinut tulisi palkata Metropolialle töihin Karhukoplaan?</span>
                             </div>
                         </div>
