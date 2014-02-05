@@ -35,9 +35,14 @@ body {
 .rest-of-the-form {
     display: none;
 }
-fieldset {
-    margin-top: 2.2em;
-}
+
 .well {
     background-color: rgba(0,0,0,0.04);
+}
+[placeholder]::-webkit-input-placeholder {
+    color: #dddddd;
+}
+[placeholder]:-moz-placeholder,
+[placeholder]::-moz-placeholder,
+[placeholder]:-ms-input-placeholder { /* WebKit browsers */
 }

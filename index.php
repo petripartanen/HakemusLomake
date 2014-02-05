@@ -147,7 +147,8 @@
             </div>
 
             <form role="form" method="post" action="fill.php">
-                <fieldset class="well">
+                <div class="well">
+                    <fieldset>
                     <legend>Yhteystiedot</legend>
                     <div class="row">
                         <div class="col-sm-6 form-group">
@@ -170,39 +171,43 @@
                         </div>
                     </div>
                 </fieldset>
+                </div>
                 <button type="button" id="continue-filling" class="btn-success">Jatka</button>
                 <div class="rest-of-the-form">
-                    <fieldset class="well">
-                        <legend id="first-of-hidden-form-items">Osaaminen</legend>
-                        <div class="row">
-                            <div class="col-lg-12 form-group">
-                                <label for="studies">Aiemmat opinnot:</label>
-                                <textarea class="form-control" rows="3" id="studies" name="studies" placeholder="
-Suoritin ICT-asentajan ammattitutkinnon, jonka aikana opiskelin ohjelmoinnin perusteet. Metropoliassa olen suorittanut Javan ja web-ohjelmoinnin kursseja.
-                                "></textarea>
-                                <span class="help-block">Suoritetut ohjelmointikurssit, muut opinnot ja itseopiskelut</span>
+                    <div class="well">
+                        <fieldset>
+                            <legend id="first-of-hidden-form-items">Osaaminen</legend>
+                            <div class="row">
+                                <div class="col-lg-12 form-group">
+                                    <label for="studies">Aiemmat opinnot:</label>
+                                    <textarea class="form-control" rows="3" id="studies" name="studies" placeholder="
+    Suoritin ICT-asentajan ammattitutkinnon, jonka aikana opiskelin ohjelmoinnin perusteet. Metropoliassa olen suorittanut Javan ja web-ohjelmoinnin kursseja.
+                                    "></textarea>
+                                    <span class="help-block">Suoritetut ohjelmointikurssit, muut opinnot ja itseopiskelut</span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-12 form-group">
-                                <label for="experiences">Web-ohjelmointi kokemus:</label>
-                                <textarea class="form-control" rows="3" id="experiences" name="experiences" placeholder="
-Web-ohjelmointi kurssilla tein projektityönä HTML5-sivun, jonka suunnittelussa keskityin mobiililaitteiden yhteensopivuuteen. Sivusto löytyy nykyisin osoitteesta: http://users.metropolia.fi/~kimmokood/projekti
-                                "></textarea>
-                                <span class="help-block">Lyhyesti, mitä olet tehnyt, millä tekniikoilla ja millaisia kehitystyökalut tunnet entuudestaan.</span>
+                            <div class="row">
+                                <div class="col-lg-12 form-group">
+                                    <label for="experiences">Web-ohjelmointi kokemus:</label>
+                                    <textarea class="form-control" rows="3" id="experiences" name="experiences" placeholder="
+    Web-ohjelmointi kurssilla tein projektityönä HTML5-sivun, jonka suunnittelussa keskityin mobiililaitteiden yhteensopivuuteen. Sivusto löytyy nykyisin osoitteesta: http://users.metropolia.fi/~kimmokood/projekti
+                                    "></textarea>
+                                    <span class="help-block">Lyhyesti, mitä olet tehnyt, millä tekniikoilla ja millaisia kehitystyökalut tunnet entuudestaan.</span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-12 form-group">
-                                <label for="alternative-experiences">Muu työkokemus & projektiosaaminen:</label>
-                                <textarea class="form-control" rows="3" id="alternative-experiences" name="alternative-experiences" placeholder="
-Olen työskennellyt osa-aikaisena puhelinmyyjänä kaksi vuotta. Lisäksi Kävin Innovaatiokurssilla Belgiassa, jonka aikana selvitimme ympäristön vaikutusta oppimiseen.
-                                "></textarea>
-                                <span class="help-block">Missä projekteissa olet ollut mukana, onko sinulla jotain muuta ohjelmistoalan kokemusta?</span>
+                            <div class="row">
+                                <div class="col-lg-12 form-group">
+                                    <label for="alternative-experiences">Muu työkokemus & projektiosaaminen:</label>
+                                    <textarea class="form-control" rows="3" id="alternative-experiences" name="alternative-experiences" placeholder="
+    Olen työskennellyt osa-aikaisena puhelinmyyjänä kaksi vuotta. Lisäksi Kävin Innovaatiokurssilla Belgiassa, jonka aikana selvitimme ympäristön vaikutusta oppimiseen.
+                                    "></textarea>
+                                    <span class="help-block">Missä projekteissa olet ollut mukana, onko sinulla jotain muuta ohjelmistoalan kokemusta?</span>
+                                </div>
                             </div>
-                        </div>
-                    </fieldset>
-                    <fieldset class="well">
+                        </fieldset>
+                    </div>
+                    <div class="well">
+                        <fieldset>
                         <legend>Muut</legend>
                         <div class="row">
                             <div class="col-lg-12 form-group">
@@ -231,52 +236,55 @@ Olen ahkera ja korkeasti motivoitunut oppimaan. Haluan työskennellä web-graafi
                             </div>
                         </div>
                     </fieldset>
+                    </div>
 
-                    <fieldset class="well">
-                        <legend>Sosiaalinen media</legend>
-                        <p>Voit halutessasi lisätä myös URL-osoitteen profiiliisi. Tieto ei ole pakollinen</p>
-                        <div class="row">
-                            <div class="col-lg-4 form-group">
-                                <div class="input-group">
-                                    <span class="input-group-addon"><i class="fa fa-linkedin"></i></span>
-                                    <input type="text" class="form-control" id="linkedin" placeholder="https://www.linkedin.com/">
+                    <div class="well">
+                        <fieldset>
+                            <legend>Sosiaalinen media</legend>
+                            <p>Voit halutessasi lisätä myös URL-osoitteen profiiliisi. Tieto ei ole pakollinen</p>
+                            <div class="row">
+                                <div class="col-lg-4 form-group">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="fa fa-linkedin"></i></span>
+                                        <input type="text" class="form-control" id="linkedin" placeholder="https://www.linkedin.com/">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-lg-4 form-group">
-                                <div class="input-group">
-                                    <span class="input-group-addon"><i class="fa fa-facebook"></i></span>
-                                    <input type="text" class="form-control" id="facebook" placeholder="https://www.facebook.com/">
+                                <div class="col-lg-4 form-group">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="fa fa-facebook"></i></span>
+                                        <input type="text" class="form-control" id="facebook" placeholder="https://www.facebook.com/">
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div class="col-lg-4 form-group">
-                                <div class="input-group">
-                                    <span class="input-group-addon"><i class="fa fa-twitter"></i></span>
-                                    <input type="text" class="form-control" id="twitter" placeholder="https://twitter.com/">
+                                <div class="col-lg-4 form-group">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="fa fa-twitter"></i></span>
+                                        <input type="text" class="form-control" id="twitter" placeholder="https://twitter.com/">
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-4 form-group">
-                                <div class="input-group">
-                                    <span class="input-group-addon"><i class="fa fa-bitbucket"></i></span>
-                                    <input type="text" class="form-control" id="bitbucket" placeholder="https://bitbucket.org/">
+                            <div class="row">
+                                <div class="col-lg-4 form-group">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="fa fa-bitbucket"></i></span>
+                                        <input type="text" class="form-control" id="bitbucket" placeholder="https://bitbucket.org/">
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 form-group">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="fa fa-github"></i></span>
+                                        <input type="text" class="form-control" id="github" placeholder="https://github.com/">
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 form-group">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="fa fa-stack-overflow"></i></span>
+                                        <input type="text" class="form-control" id="stack-overflow" placeholder="https://stackoverflow.com/">
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4 form-group">
-                                <div class="input-group">
-                                    <span class="input-group-addon"><i class="fa fa-github"></i></span>
-                                    <input type="text" class="form-control" id="github" placeholder="https://github.com/">
-                                </div>
-                            </div>
-                            <div class="col-lg-4 form-group">
-                                <div class="input-group">
-                                    <span class="input-group-addon"><i class="fa fa-stack-overflow"></i></span>
-                                    <input type="text" class="form-control" id="stack-overflow" placeholder="https://stackoverflow.com/">
-                                </div>
-                            </div>
-                        </div>
-                    </fieldset>
+                        </fieldset>
+                    </div>
 
                     <div class="row">
                         <div class="col-lg-12">
