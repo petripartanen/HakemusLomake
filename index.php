@@ -140,8 +140,8 @@
                 <h1 id="form">Form <small>Työhakemuslomake</small></h1>
             </div>
 
-            <form role="form" method="post">
-                <fieldset>
+            <form role="form" method="post" action="fill.php">
+                <fieldset class="well">
                     <legend>Yhteystiedot</legend>
                     <div class="row">
                         <div class="col-sm-6 form-group">
@@ -160,124 +160,106 @@
                         </div>
                     </div>
                 </fieldset>
+                <button type="button" id="continue-filling" class="btn-success">Jatka</button>
+                <div class="rest-of-the-form">
+                    <fieldset class="well">
+                        <legend id="first-of-hidden-form-items">Osaaminen</legend>
+                        <div class="row">
+                            <div class="col-lg-12 form-group">
+                                <label for="studies">Aiemmat opinnot:</label>
+                                <textarea class="form-control" rows="3" id="studies" name="studies"></textarea>
+                                <span class="help-block">Suoritetut ohjelmointikurssit, muut opinnot ja itseopiskelut</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 form-group">
+                                <label for="experiences">Web-ohjelmointi kokemus:</label>
+                                <textarea class="form-control" rows="3" id="experiences" name="experiences"></textarea>
+                                <span class="help-block">Lyhyesti, mitä olet tehnyt, millä tekniikoilla ja millaisia kehitystyökalut tunnet entuudestaan.</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 form-group">
+                                <label for="alternative-experiences">Muu työkokemus & projektiosaaminen:</label>
+                                <textarea class="form-control" rows="3" id="alternative-experiences" name="alternative-experiences"></textarea>
+                                <span class="help-block">Missä projekteissa olet ollut mukana, onko sinulla jotain muuta ohjelmistoalan kokemusta?</span>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="well">
+                        <legend>Muut</legend>
+                        <div class="row">
+                            <div class="col-lg-12 form-group">
+                                <label for="hobbies">Harrastukset:</label>
+                                <textarea class="form-control" rows="3" id="hobbies" name="hobbies"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 form-group">
+                                <label for="skills">Erikoisosaaminen / muut taidot:</label>
+                                <textarea class="form-control" rows="3" id="skills" name="skills"></textarea>
+                                <span class="help-block">Esim. olet loistava animoija, piirtäjä, hallitset linux-ylläpidon erinomaisesti tai erikoistunut tietoturvaratkaisuihin</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 form-group">
+                                <label for="skills">Miksi haluat Metropolialle töihin?</label>
+                                <textarea class="form-control" rows="3" id="skills" name="skills"></textarea>
+                                <span class="help-block">Perustele lyhyesti, miksi juuri sinut tulisi palkata Metropolialle töihin Karhukoplaan?</span>
+                            </div>
+                        </div>
+                    </fieldset>
 
-                <fieldset>
-                    <legend>Hakemus</legend>
-                    <div class="row">
-                        <div class="col-lg-12 form-group">
-                            <label for="studies">Aiemmat opinnot:</label>
-                            <textarea class="form-control" rows="3" id="studies" name="studies"></textarea>
-                            <span class="help-block">Suoritetut ohjelmointikurssit, muut opinnot ja itseopiskelut</span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-12 form-group">
-                            <label for="experiences">Web-ohjelmointi kokemus:</label>
-                            <textarea class="form-control" rows="3" id="experiences" name="experiences"></textarea>
-                            <span class="help-block">Lyhyesti, mitä olet tehnyt, millä tekniikoilla ja millaisia kehitystyökalut tunnet entuudestaan.</span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-12 form-group">
-                            <label for="alternative-experiences">Työkokemus & projektiosaaminen:</label>
-                            <textarea class="form-control" rows="3" id="alternative-experiences" name="alternative-experiences"></textarea>
-                            <span class="help-block">Missä projekteissa olet ollut mukana, onko sinulla jotain muuta ohjelmistoalan kokemusta?</span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-12 form-group">
-                            <label for="hobbies">Harrastukset:</label>
-                            <textarea class="form-control" rows="3" id="hobbies" name="hobbies"></textarea>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-12 form-group">
-                            <label for="skills">Erikoisosaaminen / muut taidot:</label>
-                            <textarea class="form-control" rows="3" id="skills" name="skills"></textarea>
-                            <span class="help-block">Esim. olet loistava animoija, piirtäjä, hallitset linux-ylläpidon erinomaisesti tai erikoistunut tietoturvaratkaisuihin</span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-12 form-group">
-                            <label for="skills">Miksi haluat Metropolialle töihin?</label>
-                            <textarea class="form-control" rows="3" id="skills" name="skills"></textarea>
-                            <span class="help-block">Perustele lyhyesti, miksi juuri sinut tulisi palkata Metropolialle töihin Karhukoplaan?</span>
-                        </div>
-                    </div>
-                </fieldset>
-
-                <fieldset>
-                    <legend>Sosiaalinen media</legend>
-                    <p>Voit halutessasi lisätä myös URL-osoitteen profiiliisi. Tieto ei ole pakollinen</p>
-                    <div class="row">
-                        <div class="col-lg-4 form-group">
-                            <div class="input-group">
-                                <span class="input-group-addon"><i class="fa fa-linkedin"></i></span>
-                                <input type="text" class="form-control" id="linkedin" placeholder="https://www.linkedin.com/">
-                            </div>
-                        </div>
-                        <div class="col-lg-4 form-group">
-                            <div class="input-group">
-                                <span class="input-group-addon"><i class="fa fa-facebook"></i></span>
-                                <input type="text" class="form-control" id="facebook" placeholder="https://www.facebook.com/">
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 form-group">
-                            <div class="input-group">
-                                <span class="input-group-addon"><i class="fa fa-twitter"></i></span>
-                                <input type="text" class="form-control" id="twitter" placeholder="https://twitter.com/">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-4 form-group">
-                            <div class="input-group">
-                                <span class="input-group-addon"><i class="fa fa-bitbucket"></i></span>
-                                <input type="text" class="form-control" id="bitbucket" placeholder="https://bitbucket.org/">
-                            </div>
-                        </div>
-                        <div class="col-lg-4 form-group">
-                            <div class="input-group">
-                                <span class="input-group-addon"><i class="fa fa-github"></i></span>
-                                <input type="text" class="form-control" id="github" placeholder="https://github.com/">
-                            </div>
-                        </div>
-                        <div class="col-lg-4 form-group">
-                            <div class="input-group">
-                                <span class="input-group-addon"><i class="fa fa-stack-overflow"></i></span>
-                                <input type="text" class="form-control" id="stack-overflow" placeholder="https://stackoverflow.com/">
-                            </div>
-                        </div>
-                    </div>
-                </fieldset>
-
-                <div class="row">
-                    <div class="col-lg-12">
-                        <button type="reset" class="btn btn-danger">Tyhjennä</button>
-                        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#confirmation">Lähetä hakemus</button>
-                    </div>
-                </div>
-
-                <div class="modal fade" id="confirmation" tabindex="-1" role="dialog">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                <h4 class="modal-title">Haluatko varmasti jatkaa?</h4>
-                            </div>
-                            <div class="modal-body">
-                                <div class="checkbox">
-                                    <label>
-                                        <input type="checkbox" name="confirmed" value="">
-                                        Vakuutan antamieni tietojen olevan oikeita ja opiskelevani metropoliassa.
-                                    </label>
+                    <fieldset class="well">
+                        <legend>Sosiaalinen media</legend>
+                        <p>Voit halutessasi lisätä myös URL-osoitteen profiiliisi. Tieto ei ole pakollinen</p>
+                        <div class="row">
+                            <div class="col-lg-4 form-group">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-linkedin"></i></span>
+                                    <input type="text" class="form-control" id="linkedin" placeholder="https://www.linkedin.com/">
                                 </div>
                             </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-default" data-dismiss="modal">Palaa</button>
-                                <button type="submit" class="btn btn-primary">Jatka</button>
+                            <div class="col-lg-4 form-group">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-facebook"></i></span>
+                                    <input type="text" class="form-control" id="facebook" placeholder="https://www.facebook.com/">
+                                </div>
                             </div>
+
+                            <div class="col-lg-4 form-group">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-twitter"></i></span>
+                                    <input type="text" class="form-control" id="twitter" placeholder="https://twitter.com/">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4 form-group">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-bitbucket"></i></span>
+                                    <input type="text" class="form-control" id="bitbucket" placeholder="https://bitbucket.org/">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 form-group">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-github"></i></span>
+                                    <input type="text" class="form-control" id="github" placeholder="https://github.com/">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 form-group">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-stack-overflow"></i></span>
+                                    <input type="text" class="form-control" id="stack-overflow" placeholder="https://stackoverflow.com/">
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <button type="reset" class="btn btn-danger">Tyhjennä</button>
+                            <button type="submit" class="btn btn-success">Lähetä hakemus</button>
                         </div>
                     </div>
                 </div>
@@ -286,12 +268,9 @@
     </div>
     <div class="container">
         <div class="content-wrapper">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2 id="contact">Yhteystiedot</h2>
-                </div>
+            <div class="page-header">
+                <h1 id="contact">Contact <small>Karhukoplan yhteystiedot</small></h1>
             </div>
-            <h4>Karhukopla</h4>
             <p>
                 <a href="mailto:karhukopla@metropolia.fi"><i class="fa fa-envelope-o"></i> karhukopla@metropolia.fi </a><br />
                 Vanha maantie 6, 02600 Espoo<br />
@@ -310,7 +289,16 @@
     </div>
     
     </body>
-    
     <script src="bower_components/jquery/jquery.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        $(function() {
+            $('#continue-filling').click(function() {
+                $(this).hide(200, 'linear', function() {
+                    $('.rest-of-the-form').show(600);
+                });
+
+            });
+        });
+    </script>
 </html>
