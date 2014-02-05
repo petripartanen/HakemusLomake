@@ -56,16 +56,16 @@
             </div>
 
             <p class="lead">Metropolia etsii kolmea teknikkan toisenvuoden opiskelijaa Leppävaaran toimipisteeseen harjoittelijoiksi.</p>
-            <p>Toimisto sijaitsee A puolen toisessa kerroksessa Metropolian leppävaaran toimitiloissa. Työnkuva on Web-sovellusten kehittäminen oppimisen tueksi. Pääset mahdollisuuden toteuttamaan itseäsi ja saat laajan kokemuksen eri ohjelmistotekniikoista. Työskentely on monipuolista ja voit itse vaikuttaa siihen, mitä ja miten teet.</p>
-            <p>Pääset alottamaan työt heti ja kesällä sinulle tarjotaan mahdollisuutta työskennellä myös täyspäiväisesti.</p>
+            <p>Toimisto sijaitsee A puolen toisessa kerroksessa Metropolian leppävaaran toimitiloissa. Työnkuva on Web-sovellusten kehittäminen oppimisen tueksi. Pääset toteuttamaan itseäsi ja saat laajan kokemuksen eri ohjelmistotekniikoista. Työskentely on monipuolista ja voit itse vaikuttaa siihen, mitä ja miten teet.</p>
+            <p>Tarjoamme sinulle minimissään 40 tuntia kuussa ja pääset alottamaan työt heti. Kesällä, koulun siirryttyä tauolle, sinulle tarjotaan mahdollisuutta työskennellä myös täyspäiväisesti.</p>
             <p>Miksi hakea?</p>
             <ul>
                 <li>Saat ohjelmistoalan työkokemusta</li>
                 <li>Joustava työaika</li>
                 <li>Itseohjautuvaa ryhmätyöskentelyä</li>
-                <li>Etätyömahdollisuudet</li>
-                <li>Voit kontrolloida omaa työtaakkaa jaksoittain</li>
-                <li>Kuukausipalkka ei vaikuta Kelan opintotuen saantiin (vuositasolla alle tukirajan)</li>
+                <li>Hyvät etätyömahdollisuudet</li>
+                <li>Voit kontrolloida omaa työaikasaldoa opintojesi mukaan</li>
+                <li>Kuukausipalkka ei vaikuta Kelan opintotuen saantiin</li>
                 <li>Työ tukee opintoja, koska pääset soveltamaan oppimaasi heti oikeassa työympäristössä</li>
                 <li>20 tuntia viikossa, eli 4tuntia päivässä</li>
             </ul>
@@ -73,7 +73,7 @@
 
         <div class="content-wrapper">
             <h2>Työnkuva</h2>
-            <p>Karhukoplassa työskennellessäsi tulet ylläpitämään Metropolian tietotekniikan koulutusohjelman käyttämiä pilvipalveluita, kuten <a href="https://harjoittelu.edu.metropolia.fi/">Harjoittelu</a>, <a href="http://games.metropolia.fi/">Games</a>, <a href="https://webinssi.edu.metropolia.fi/login.php">Webinssi</a>. Osa ylläpidettävistä järjestelmistä on peräisin koululle oppilaiden kehittämien projekti- tai opinnäytetöiden tuloksena, näissä tilanteissa oppilaan valmistuttua kehitystyön jatkaminen on siirtynyt Karhukoplan vastuulle.</p>
+            <p>Karhukoplassa työskennellessäsi tulet ylläpitämään Metropolian tietotekniikan koulutusohjelman käyttämiä pilvipalveluita kuten <a href="https://harjoittelu.edu.metropolia.fi/">Harjoittelu</a>, <a href="http://games.metropolia.fi/">Games</a> & <a href="https://webinssi.edu.metropolia.fi/login.php">Webinssi</a>. Osa ylläpidettävistä järjestelmistä on peräisin koululle oppilaiden kehittämien projekti- tai opinnäytetöiden tuloksena, näissä tilanteissa oppilaan valmistuttua kehitystyön jatkaminen on siirtynyt Karhukoplan vastuulle.</p>
             <p>Työtehtäviisi kuuluu myös täysin uusien sovellusten kehittäminen ja suunnittelu, joiden ideat tulevat lähinnä opettajilla tai heidän pyynnöstään.</p>
             <p>Karhukopla tarjoaa sinulle hyvän mahdollisuuden kehittää omaa osaamistasi muun muassa <a href="http://fi.wikipedia.org/wiki/Drupal">Drupal -sisällönhallintajärjestelmän</a>, <a href="http://fi.wikipedia.org/wiki/Wordpress">Wordpress -julkaisualustan</a>, <a href="http://symfony.com/">Symfony -PHP sovelluskehyksen</a> ja tarjoaa sinulle modernit työkalut ja kehitysympäristön siihen.</p>
         </div>
@@ -99,7 +99,7 @@
 
             <dl class="dl-horizontal">
                 <dt>Palvelinylläpito</dt>
-                <dd>Karhukoplalla on useita palvelimia: CI-pavelin, kehityspavelin, asiakastesti ja eristetty tuotantoympäristö</dd>
+                <dd>Karhukoplalla on useita palvelimia: CI-pavelin, kehityspavelin, asiakastesti ja eristetty tuotantoympäristö, jotka vaativat ajottain huolenpitoa</dd>
             </dl>
 
             <dl class="dl-horizontal">
@@ -109,18 +109,17 @@
 
             <dl class="dl-horizontal">
                 <dt>Symfony</dt>
-                <dd>PHP -ohjelmistokehys, joka antaa rungon sovellukselle ja tarjoaa paljon valmiita komponentteja: PHPUnit, Doctrine, Twig, jne...</dd>
+                <dd>PHP -ohjelmistokehys, joka antaa rungon sovellukselle ja tarjoaa paljon valmiita komponentteja, esim. PHPUnit, Doctrine, Twig, jne...</dd>
             </dl>
 
             <dl class="dl-horizontal">
                 <dt>Testivetoinen kehitys</dt>
-                <dd>TDD:n idea on kirjoittaa sovellukselle testejä ennen varsinaisen koodin kirjoittamista. <br />
-                    Ja testien tulee mennä läpi, kun toiminnallisuus on toteutettu oikein.</dd>
+                <dd>TDD:n idea on kirjoittaa sovellukselle testejä ennen varsinaisen koodin kirjoittamista ja kun toiminnallisuus on toteutettu oikein, testien tulee mennä läpi.</dd>
             </dl>
 
             <dl class="dl-horizontal">
-                <dt>Käyttöliittymät</dt>
-                <dd>Käyttöliittymä suunnittelu on nykyisin iso osa ohjelmistokehitystä. Web-sovellukset käyttävät paljon eri javascript kirjastoja (jQuery, AngularJS, Bootstrap, Foundation), käyttöliittymäkehyksiä ja kehityksessä on huomioitava myös mobiililaitteet.</dd>
+                <dt>Kehykset & kirjastot</dt>
+                <dd>Erilaiset valmiit kehykset ja kirjastot ovat osa ohjelmistosuunnittelua. Ne pitävät sisällää vakiintuneita käytäntöjä ja tarjoavat paljon valmista koodia. Web-sovellukset käyttävät paljon eri javascript kirjastoja (mm. jQuery) ja eri käyttöliittymäkehyksiä, joiden avulla on luotettavampaa rakentaa yhteneviä sivustokokonaisuuksia.</dd>
             </dl>
 
             <dl class="dl-horizontal">
@@ -152,21 +151,21 @@
                     <legend>Yhteystiedot</legend>
                     <div class="row">
                         <div class="col-sm-6 form-group">
-                            <label for="fullName">Nimesi:</label>
+                            <label for="fullName">Nimesi</label>
                             <input type="text" class="form-control" id="fullName" name="fullName" placeholder="Kimmo Koodari"/>
                         </div>
                         <div class="col-sm-6 form-group">
-                            <label for="group">Luokkatunnus:</label>
+                            <label for="group">Luokkatunnus</label>
                             <input type="email" class="form-control" id="group" name="group" placeholder="TT12S1E"/>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-sm-6 form-group">
-                            <label for="userid">käyttäjätunnus:</label>
+                            <label for="userid">Tuubitunnus</label>
                             <input type="text" class="form-control" id="userid" name="userid" placeholder="kimmokood" />
                         </div>
                         <div class="col-sm-6 form-group">
-                            <label for="email">Sähköposti:</label>
+                            <label for="email">Sähköposti</label>
                             <input type="text" class="form-control" id="email" name="email" placeholder="kimmo.koodari@metropolia.fi" />
                         </div>
                     </div>
@@ -179,29 +178,42 @@
                             <legend id="first-of-hidden-form-items">Osaaminen</legend>
                             <div class="row">
                                 <div class="col-lg-12 form-group">
-                                    <label for="studies">Aiemmat opinnot:</label>
-                                    <textarea class="form-control" rows="3" id="studies" name="studies" placeholder="
-Suoritin ICT-asentajan ammattitutkinnon, jonka aikana opiskelin ohjelmoinnin perusteet. Metropoliassa olen suorittanut Javan ja web-ohjelmoinnin kursseja.
-                                    "></textarea>
-                                    <span class="help-block">Suoritetut ohjelmointikurssit, muut opinnot ja itseopiskelut</span>
+                                    <label for="studies">Opinnot</label>
+                                    <textarea class="form-control" rows="5" id="studies" name="studies"></textarea>
+                                    <span class="help-block">Missä olet aiemmin opiskellut ja mitä ohjelmointia tukevia opintoja olet jo suorittanut?</span>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-lg-12 form-group">
-                                    <label for="experiences">Web-ohjelmointi kokemus:</label>
-                                    <textarea class="form-control" rows="3" id="experiences" name="experiences" placeholder="
-Web-ohjelmointi kurssilla tein projektityönä HTML5-sivun, jonka suunnittelussa keskityin mobiililaitteiden yhteensopivuuteen. Sivusto löytyy nykyisin osoitteesta: http://users.metropolia.fi/~kimmokood/projekti
-                                    "></textarea>
-                                    <span class="help-block">Lyhyesti, mitä olet tehnyt, millä tekniikoilla ja millaisia kehitystyökalut tunnet entuudestaan.</span>
+                                    <label for="experiences">Web-ohjelmointi kokemukset</label>
+                                    <textarea class="form-control" rows="5" id="experiences" name="experiences"></textarea>
+                                    <span class="help-block">Oletko aiemmin tehnyt verkkosivustoja? Jos olet, mitä?</span>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-lg-12 form-group">
-                                    <label for="alternative-experiences">Muu työkokemus & projektiosaaminen:</label>
-                                    <textarea class="form-control" rows="3" id="alternative-experiences" name="alternative-experiences" placeholder="
-Olen työskennellyt osa-aikaisena puhelinmyyjänä kaksi vuotta. Lisäksi Kävin Innovaatiokurssilla Belgiassa, jonka aikana selvitimme ympäristön vaikutusta oppimiseen.
-                                    "></textarea>
-                                    <span class="help-block">Missä projekteissa olet ollut mukana, onko sinulla jotain muuta ohjelmistoalan kokemusta?</span>
+                                    <label for="alternative-experiences">Muu työkokemus & projektiosaaminen</label>
+                                    <textarea class="form-control" rows="5" id="alternative-experiences" name="alternative-experiences"></textarea>
+                                    <span class="help-block">Missä työtehtävissä olet aiemmin toiminut? Onko sinulla kokemusta projektissa työskentelystä?</span>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="well">
+                        <fieldset>
+                            <legend id="first-of-hidden-form-items">Ohjelmointi</legend>
+                            <div class="row">
+                                <div class="col-lg-12 form-group">
+                                    <label for="studies">Mitä on ohjelmointi?</label>
+                                    <textarea class="form-control" rows="5" id="studies" name="studies"></textarea>
+                                    <span class="help-block">Kerro lyhyesti, mitä ajattelet ohjelmoinnista työnä? Mitä se merkitsee sinulle?</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12 form-group">
+                                    <label for="experiences">Millaisena sovelluskehittäjänä näet itsesi?</label>
+                                    <textarea class="form-control" rows="5" id="experiences" name="experiences"></textarea>
+                                    <span class="help-block">Oletko aiemmin tehnyt verkkosivustoja? Jos olet, mitä?</span>
                                 </div>
                             </div>
                         </fieldset>
@@ -211,28 +223,22 @@ Olen työskennellyt osa-aikaisena puhelinmyyjänä kaksi vuotta. Lisäksi Kävin
                         <legend>Muut</legend>
                         <div class="row">
                             <div class="col-lg-12 form-group">
-                                <label for="hobbies">Harrastukset:</label>
-                                <textarea class="form-control" rows="3" id="hobbies" name="hobbies" placeholder="
-Olen harrastanut 7-vuotta piirtämistä ja viime vuonna aloitin opettelemaan korttitemppuja.
-                                "></textarea>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-12 form-group">
-                                <label for="skills">Erikoisosaaminen / muut taidot:</label>
-                                <textarea class="form-control" rows="3" id="skills" name="skills" placeholder="
-Olen sosiaalinen ja avoin ihminen. Tulen toimeen hyvin eri persoonien kanssa ja olen hyvä tuottamaan moninaista grafiikkaa.
-                                "></textarea>
-                                <span class="help-block">Esim. olet loistava animoija, hallitset linux-ylläpidon erinomaisesti tai erikoistunut tietoturvaratkaisuihin</span>
+                                <label for="skills">Muu osaaminen ja taidot</label>
+                                <textarea class="form-control" rows="5" id="skills" name="skills"></textarea>
+                                <span class="help-block">Omaatko jotain muita taitoja/ominaisuuksia, kuten esimerkiksi muut ohjelmointikielet, kuvankäsittelyä, johtamis- tai ryhmätyöskentelytaitoja, jotka koet auttavan sinua ja muita työtehtävissäsi?</span>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-lg-12 form-group">
                                 <label for="skills">Miksi haluat Metropolialle töihin?</label>
-                                <textarea class="form-control" rows="3" id="skills" name="skills" placeholder="
-Olen ahkera ja korkeasti motivoitunut oppimaan. Haluan työskennellä web-graafikokkona ja minulla on aina ollut korkea työmoraali. Uskon että kykenen kirjoittamaan laadukasta koodia.
-                                "></textarea>
-                                <span class="help-block">Perustele lyhyesti, miksi juuri sinut tulisi palkata Metropolialle töihin Karhukoplaan?</span>
+                                <textarea class="form-control" rows="5" id="skills" name="skills"></textarea>
+                                <span class="help-block">Perustele lyhyesti, miksi juuri sinut tulisi valita?</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 form-group">
+                                <label for="skills">Mitä halaisit vielä kertoa tai sanoa?</label>
+                                <textarea class="form-control" rows="5" id="skills" name="skills"></textarea>
                             </div>
                         </div>
                     </fieldset>
