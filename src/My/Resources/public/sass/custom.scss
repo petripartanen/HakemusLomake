@@ -1,37 +1,30 @@
 body {
-    background-image: url("../img/bg.png");
-    background-size: cover;
+  background-image: url("../img/bg.png");
+  background-size: cover;
+  padding-bottom: 16em;
+  font-size: 16px;
 }
 
 .hero-unit {
-	overflow: hidden;
-	padding-top: 160px;
-	padding-bottom: 200px;
-	background-image: url("../img/hero-unit.jpg");
-	background-repeat: no-repeat;
-	background-position: center;
-    background-size: cover;
-    color: #ffffff;
-}
-
-.hero-unit .hero-item {
+  overflow: hidden;
+  padding-top: 160px;
+  padding-bottom: 200px;
+  background-image: url("../img/hero-unit.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #ffffff;
+  .hero-item {
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: rgba(0,0,0,0.8);
+    h1 {
+      padding: 0;
+      margin: 0;
+    }
+  }
 }
 
-.hero-unit .hero-item h1 {
-    padding: 0;
-    margin: 0;
-}
-
-body {
-    font-size: 16px;
-}
-
-.content-wrapper:not(:last-child) {
-    margin-bottom: 4em;
-}
 .rest-of-the-form {
     display: none;
 }

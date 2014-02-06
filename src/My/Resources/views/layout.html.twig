@@ -15,15 +15,15 @@
         <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
         <!-- Add custom CSS here -->
-        <link href="/css/bootstrap.min.css" rel="stylesheet">
-        <link href="/css/custom.css" rel="stylesheet">
+        <link href="/css/bootstrap_theme_flatly.min.css" rel="stylesheet">
+        <link href="/css/styles.min.css" rel="stylesheet">
         <style>
             {% block css %}{% endblock %}
         </style>
     </head>
     <body>
     {% if hideNavBar is not defined %}
-        {{ include('nav-bar.html.twig') }}
+        {{ include('main/nav-bar.html.twig') }}
     {% endif %}
 
     {% block content %}{% endblock %}
