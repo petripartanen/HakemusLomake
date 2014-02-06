@@ -27,6 +27,7 @@
 {% endblock %}
 
 {% block javascript %}
+    {{ parent() }}
     $(function() {
         $('#back-to-home').tooltip();
     });

@@ -27,10 +27,13 @@
 {% endblock %}
 
 {% block javascript %}
+    {{ parent() }}
     $(function() {
         $('#continue-filling').click(function() {
             $(this).hide(200, 'linear', function() {
-                $('.rest-of-the-form').show(600);
+                $('.rest-of-the-form').show(600, function() {
+                    $('body').scrollspy('refresh')
+                });
             });
 
         });

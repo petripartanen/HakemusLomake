@@ -21,16 +21,18 @@
             {% block css %}{% endblock %}
         </style>
     </head>
-    {% if hideNavBar is defined %}
-        <body>
-    {% else %}
-        <body data-spy="scroll" data-target=".main-navbar">
+    <body>
+    {% if hideNavBar is not defined %}
         {{ include('nav-bar.html.twig') }}
     {% endif %}
 
     {% block content %}{% endblock %}
     </body>
     <script>
-        {% block javascript %}{% endblock %}
+        {% block javascript %}
+            {% if hideNavBar is not defined %}
+                $('body').scrollspy({ target: '.main-navbar' });
+            {% endif %}
+        {% endblock %}
     </script>
 </html>
