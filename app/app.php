@@ -11,7 +11,12 @@ $app['debug'] = true;
 $app->get('/', function () use ($app) {
     return $app['twig']->render('home/index.html.twig');
 });
-$app->post('/create/', function () use ($app) {
+
+$app->post('/submit/', function () use ($app) {
+    return $app['twig']->render('create/success.html.twig');
+});
+
+$app->get('/success/', function () use ($app) {
     return $app['twig']->render('create/success.html.twig');
 });
 
