@@ -1,0 +1,54 @@
+{% set hideNavBar = true  %}
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+<div class="hero-unit" id="hero-unit">
+    <div class="backButton">
+        <a id="back-to-home" href="/" data-toggle="tooltip" data-original-title="Back to home"  data-placement="bottom">
+            <i class="fa fa-arrow-circle-left"></i>
+        </a>
+    </div>
+    <div class="hero-item">
+        <div class="container">
+            <div class="page-header">
+                <h1 id="contact">Kiitos mielenkiinnostasi<small> Otamme teihin yhteyttä, kun käyneet kaikki hakemukset läpi.</small></h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 text-right">
+                Copyright &copy 2014 Tommi Keskitalo
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block javascript %}
+    $(function() {
+        $('#back-to-home').tooltip();
+    });
+{% endblock %}
+
+
+{% block css %}
+    html, body, .hero-unit {
+        height: 100%;
+        background-image: url("../img/bg2.jpg");
+    }
+    .backButton {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        opacity: 0.9;
+        width: 100%;
+    }
+    .backButton:hover {
+        opacity: 1;
+    }
+    .backButton i {
+        font-size: 4em;
+    }
+{% endblock %}

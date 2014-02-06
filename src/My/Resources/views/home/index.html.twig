@@ -8,10 +8,13 @@
         </div>
     </div>
     <div class="container">
+        {% include 'home/about.html.twig' %}
     </div>
     <div class="container">
+        {% include 'home/form.html.twig' %}
     </div>
     <div class="container">
+        {% include 'home/contact.html.twig' %}
     </div>
 
     <div class="container-fluid">
@@ -23,7 +26,7 @@
     </div>
 {% endblock %}
 
-{% block on-site-script %}
+{% block javascript %}
     $(function() {
         $('#continue-filling').click(function() {
             $(this).hide(200, 'linear', function() {
