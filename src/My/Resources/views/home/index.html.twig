@@ -1,0 +1,36 @@
+{% extends "layout.html.twig" %}
+{% block content %}
+    <div class="hero-unit" id="hero-unit">
+        <div class="hero-item">
+            <div class="container">
+                <h1>Karhukopla - Paras kesätyö ikinä!</h1>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+    </div>
+    <div class="container">
+    </div>
+    <div class="container">
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 text-right">
+                Copyright &copy 2014 Tommi Keskitalo
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block on-site-script %}
+    $(function() {
+        $('#continue-filling').click(function() {
+            $(this).hide(200, 'linear', function() {
+                $('.rest-of-the-form').show(600);
+            });
+
+        });
+    });
+{% endblock %}
+
