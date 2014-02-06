@@ -1,0 +1,118 @@
+{% import _self as forms %}
+<form role="form" method="post" action="/submit/" novalidate>
+    <div class="well">
+        <fieldset>
+            <legend>Yhteystiedot</legend>
+            <div class="row">
+                <div class="col-sm-6 form-group">
+                    {{ form_row(form.fullName, { 'attr': {'placeholder': 'Kimmo Koodari', 'class': 'form-control' } }) }}
+                </div>
+                <div class="col-sm-6 form-group">
+                    {{ form_row(form.group, { 'attr': {'placeholder': 'TT12S1E', 'class': 'form-control' } }) }}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 form-group">
+                    {{ form_row(form.userid, { 'attr': {'placeholder': 'kimmoko', 'class': 'form-control' } }) }}
+                </div>
+                <div class="col-sm-6 form-group">
+                    {{ form_row(form.email, { 'attr': {'placeholder': 'kimmo.koodari@metropolia.fi', 'class': 'form-control' } }) }}
+                </div>
+            </div>
+        </fieldset>
+    </div>
+    <button type="button" id="continue-filling" class="btn-success">Jatka</button>
+    <div class="rest-of-the-form">
+
+        <div class="well">
+            <fieldset>
+                <legend id="first-of-hidden-form-items">Osaaminen</legend>
+                {{ forms.inputTextarea(form.studies, "Missä olet aiemmin opiskellut ja mitä ohjelmointia tukevia opintoja olet jo suorittanut?") }}
+                {{ forms.inputTextarea(form.experiences, "Oletko aiemmin tehnyt verkkosivustoja? Jos olet, mitä?") }}
+                {{ forms.inputTextarea(form.alternativeExperiences, "Missä työtehtävissä olet aiemmin toiminut? Onko sinulla kokemusta projektissa työskentelystä?") }}
+            </fieldset>
+        </div>
+
+        <div class="well">
+            <fieldset>
+                <legend>Ohjelmointi</legend>
+                {{ forms.inputTextarea(form.programming, "Kerro lyhyesti, mitä ajattelet ohjelmoinnista työnä? Mitä se merkitsee sinulle?") }}
+                {{ forms.inputTextarea(form.meAsProgrammer, "Kuvaile lyhyesti, millainen olet ohjelmoijana") }}
+            </fieldset>
+        </div>
+
+        <div class="well">
+            <fieldset>
+                <legend>Muut</legend>
+                {{ forms.inputTextarea(form.skills, "Omaatko jotain muita taitoja/ominaisuuksia, kuten esimerkiksi muut ohjelmointikielet, kuvankäsittelyä, johtamis- tai ryhmätyöskentelytaitoja, jotka koet auttavan sinua ja muita työtehtävissäsi?") }}
+                {{ forms.inputTextarea(form.whyWorkHere, "Perustele lyhyesti, miksi juuri sinut tulisi valita?") }}
+                {{ forms.inputTextarea(form.also, "Perustele lyhyesti, miksi juuri sinut tulisi valita?") }}
+            </fieldset>
+        </div>
+
+        <div class="well">
+            <fieldset>
+                <legend>Sosiaalinen media</legend>
+                <p>Voit halutessasi lisätä myös URL-osoitteen profiiliisi. Tieto ei ole pakollinen</p>
+                <div class="row">
+                    <div class="col-lg-4 form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-linkedin"></i></span>
+                            {{ form_widget(form.linkedIn, { 'attr': {'placeholder': 'https://linkedin.com/', 'class': 'form-control' } }) }}
+                        </div>
+                    </div>
+                    <div class="col-lg-4 form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-facebook"></i></span>
+                            {{ form_widget(form.facebook, { 'attr': {'placeholder': 'https://www.facebook.com/', 'class': 'form-control' } }) }}
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-twitter"></i></span>
+                            {{ form_widget(form.twitter, { 'attr': {'placeholder': 'https://twitter.com/', 'class': 'form-control' } }) }}
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-bitbucket"></i></span>
+                            {{ form_widget(form.bitbucket, { 'attr': {'placeholder': 'https://bitbucket.com/', 'class': 'form-control' } }) }}
+                        </div>
+                    </div>
+                    <div class="col-lg-4 form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-github"></i></span>
+                            {{ form_widget(form.github, { 'attr': {'placeholder': 'https://github.com/', 'class': 'form-control' } }) }}
+                        </div>
+                    </div>
+                    <div class="col-lg-4 form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-stack-overflow"></i></span>
+                            {{ form_widget(form.stackOverflow, { 'attr': {'placeholder': 'https://stackoverflow.com/', 'class': 'form-control' } }) }}
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12">
+                <button type="reset" class="btn btn-danger">Tyhjennä</button>
+                <button type="submit" class="btn btn-success">Lähetä hakemus</button>
+            </div>
+        </div>
+    </div>
+    {{ form_rest(form) }}
+</form>
+
+{% macro inputTextarea(formItem, helpText) %}
+    <div class="row">
+        <div class="col-lg-12 form-group">
+            {{ form_row(formItem, { 'attr': {'class': 'form-control', 'rows':'6' } }) }}
+            <span class="help-block">{{ helpText }}?</span>
+        </div>
+    </div>
+{% endmacro %}

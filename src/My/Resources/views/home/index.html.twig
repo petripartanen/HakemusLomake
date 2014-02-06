@@ -7,14 +7,26 @@
             </div>
         </div>
     </div>
+
     <div class="container">
-        {% include 'home/about.html.twig' %}
+        <div class="page-header">
+            <h1 id="about">Tietoa meistä <small>avoimet työpaikat</small></h1>
+        </div>
+        {% include 'home/about.html.twig' only %}
     </div>
+
     <div class="container">
-        {% include 'home/form.html.twig' %}
+        <div class="page-header">
+            <h1 id="form">Lomake</h1>
+        </div>
+        {% include 'forms/application.html.twig' with {'form': applicationForm} only %}
     </div>
+
     <div class="container">
-        {% include 'home/contact.html.twig' %}
+        <div class="page-header">
+            <h1 id="contact">Yhteystiedot <small>Karhukopla</small></h1>
+        </div>
+        {% include 'home/contact.html.twig' only %}
     </div>
 
     <div class="container-fluid">
