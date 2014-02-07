@@ -83,42 +83,60 @@ class FormProvider {
                 'required' => false,
                 'label' => false,
                 'constraints' => array(
-                    new Assert\Url()
+                    new Assert\Url(),
+                    new Assert\Regex(array(
+                        'pattern' => '/\blinkedin.com\b/',
+                    ))
                 )
             ))
             ->add('facebook', 'text', array(
                 'required' => false,
                 'label' => false,
                 'constraints' => array(
-                    new Assert\Url()
+                    new Assert\Url(),
+                    new Assert\Regex(array(
+                        'pattern' => '/\bfacebook.com\b/',
+                    ))
                 )
             ))
             ->add('twitter', 'text', array(
                 'required' => false,
                 'label' => false,
                 'constraints' => array(
-                    new Assert\Url()
+                    new Assert\Url(),
+                    new Assert\Regex(array(
+                        'pattern' => '/\btwitter.com\b/',
+                    ))
                 )
             ))
             ->add('bitbucket', 'text', array(
                 'required' => false,
                 'label' => false,
                 'constraints' => array(
-                    new Assert\Url()
+                    new Assert\Url(),
+                    new Assert\Regex(array(
+                        'pattern' => '/\bbitbucket.com\b/',
+                    ))
                 )
             ))
             ->add('github', 'text', array(
                 'required' => false,
                 'label' => false,
                 'constraints' => array(
-                    new Assert\Url()
+                    new Assert\Url(),
+                    new Assert\Regex(array(
+                        'pattern' => '/\bgithub.com\b/',
+                    ))
                 )
             ))
             ->add('stackOverflow', 'text', array(
                 'required' => false,
                 'label' => false,
                 'constraints' => array(
-                    new Assert\Url()
+                    new Assert\Url(),
+                    new Assert\Regex(array(
+                        'pattern' => '/\bstackoverflow.com\b/',
+                    ))
                 )
             ))
             ->getForm();
