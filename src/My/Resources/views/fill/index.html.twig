@@ -2,6 +2,23 @@
 {% extends "layout.html.twig" %}
 
 {% block content %}
+    <div class="modal fade" id="errorInFillingForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel">Virhe lomakkeen lähettämisessä.</h4>
+                </div>
+                <div class="modal-body">
+                    Ole hyvä ja tarkista kaikki kentät ja yritä uudelleen.
+                </div>
+                <div class="modal-footer">
+                    <button id="closeErrorModal" type="button" class="btn btn-primary">Jatka lomakkeelle</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="hero-unit" id="hero-unit">
 
         <div class="backButton">
@@ -49,5 +66,12 @@
         $('#continue-filling').hide();
         $('.rest-of-the-form').show()
         $('#back-to-home').tooltip();
+        $('#errorInFillingForm').modal('show');
+
+        $('#closeErrorModal').click(function() {
+            $('#errorInFillingForm').modal('hide');
+            var aTag = $("div[class='has-error']");
+            $('html,body').animate({scrollTop: aTag.offset().top},'slow');
+        });
     });
 {% endblock %}
