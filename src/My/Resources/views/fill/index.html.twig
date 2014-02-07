@@ -71,8 +71,9 @@
         $('#closeErrorModal').click(function() {
             $('#errorInFillingForm').modal('hide');
             var confictElement = $("div[class~='has-error']:first");
-            $("div[class~='has-error']:first [name^='form']").focus();
-            $('body').animate({scrollTop: confictElement.offset().top},'slow');
+            $('body').animate({scrollTop: confictElement.offset().top},'slow', function() {
+                $("div[class~='has-error']:first [name^='form']").focus();
+            });
         });
     });
 {% endblock %}
