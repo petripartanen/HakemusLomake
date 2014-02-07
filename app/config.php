@@ -6,6 +6,6 @@
         'locale_fallbacks' => array('fi'),
     ),
     'TwigServiceProvider' => array(
-        'twig.path' => __DIR__ . '/../src/My/resources/views',
+        'twig.path' => __DIR__ . '/../src/My/Resources/views'
     )
 );

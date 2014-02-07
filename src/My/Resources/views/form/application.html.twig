@@ -1,22 +1,25 @@
+{% form_theme form 'main/extended_form_layout.html.twig' %}
 {% import _self as forms %}
+
 <form role="form" method="post" action="/fill/" novalidate>
+    {{ form_errors(form) }}
     <div class="well">
         <fieldset>
             <legend>Yhteystiedot</legend>
             <div class="row">
-                <div class="col-sm-6 form-group">
-                    {{ form_row(form.fullName, { 'attr': {'placeholder': 'Kimmo Koodari', 'class': 'form-control' } }) }}
+                <div class="col-sm-6 form-group {% if form.fullName.vars.errors %}has-error{% endif %}">
+                    {{ form_row(form.fullName, { 'attr': {'placeholder': 'Kimmo Koodari' } }) }}
                 </div>
-                <div class="col-sm-6 form-group">
-                    {{ form_row(form.group, { 'attr': {'placeholder': 'TT12S1E', 'class': 'form-control' } }) }}
+                <div class="col-sm-6 form-group {% if form.group.vars.errors %}has-error{% endif %}">
+                    {{ form_row(form.group, { 'attr': {'placeholder': 'TT12S1E' } }) }}
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-6 form-group">
-                    {{ form_row(form.userid, { 'attr': {'placeholder': 'kimmoko', 'class': 'form-control' } }) }}
+                <div class="col-sm-6 form-group {% if form.userid.vars.errors %}has-error{% endif %}">
+                    {{ form_row(form.userid, { 'attr': {'placeholder': 'kimmoko' } }) }}
                 </div>
-                <div class="col-sm-6 form-group">
-                    {{ form_row(form.email, { 'attr': {'placeholder': 'kimmo.koodari@metropolia.fi', 'class': 'form-control' } }) }}
+                <div class="col-sm-6 form-group {% if form.email.vars.errors %}has-error{% endif %}">
+                    {{ form_row(form.email, { 'attr': {'placeholder': 'kimmo.koodari@metropolia.fi' } }) }}
                 </div>
             </div>
         </fieldset>
@@ -56,43 +59,49 @@
                 <p>Voit halutessasi lisätä myös URL-osoitteen profiiliisi. Tieto ei ole pakollinen</p>
                 <div class="row">
                     <div class="col-lg-4 form-group">
-                        <div class="input-group">
+                        <div class="input-group {% if form.linkedIn.vars.errors %}has-error{% endif %}">
                             <span class="input-group-addon"><i class="fa fa-linkedin"></i></span>
-                            {{ form_widget(form.linkedIn, { 'attr': {'placeholder': 'https://linkedin.com/', 'class': 'form-control' } }) }}
+                            {{ form_widget(form.linkedIn, { 'attr': {'placeholder': 'https://linkedin.com/' } }) }}
                         </div>
+                        {{ form_errors(form.linkedIn) }}
                     </div>
                     <div class="col-lg-4 form-group">
-                        <div class="input-group">
+                        <div class="input-group {% if form.facebook.vars.errors %}has-error{% endif %}">
                             <span class="input-group-addon"><i class="fa fa-facebook"></i></span>
-                            {{ form_widget(form.facebook, { 'attr': {'placeholder': 'https://www.facebook.com/', 'class': 'form-control' } }) }}
+                            {{ form_widget(form.facebook, { 'attr': {'placeholder': 'https://www.facebook.com/' } }) }}
                         </div>
+                        {{ form_errors(form.facebook) }}
                     </div>
 
                     <div class="col-lg-4 form-group">
-                        <div class="input-group">
+                        <div class="input-group {% if form.twitter.vars.errors %}has-error{% endif %}">
                             <span class="input-group-addon"><i class="fa fa-twitter"></i></span>
-                            {{ form_widget(form.twitter, { 'attr': {'placeholder': 'https://twitter.com/', 'class': 'form-control' } }) }}
+                            {{ form_widget(form.twitter, { 'attr': {'placeholder': 'https://twitter.com/' } }) }}
                         </div>
+                        {{ form_errors(form.twitter) }}
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-lg-4 form-group">
-                        <div class="input-group">
+                        <div class="input-group {% if form.bitbucket.vars.errors %}has-error{% endif %}">
                             <span class="input-group-addon"><i class="fa fa-bitbucket"></i></span>
-                            {{ form_widget(form.bitbucket, { 'attr': {'placeholder': 'https://bitbucket.com/', 'class': 'form-control' } }) }}
+                            {{ form_widget(form.bitbucket, { 'attr': {'placeholder': 'https://bitbucket.com/' } }) }}
                         </div>
+                        {{ form_errors(form.bitbucket) }}
                     </div>
                     <div class="col-lg-4 form-group">
-                        <div class="input-group">
+                        <div class="input-group {% if form.github.vars.errors %}has-error{% endif %}">
                             <span class="input-group-addon"><i class="fa fa-github"></i></span>
-                            {{ form_widget(form.github, { 'attr': {'placeholder': 'https://github.com/', 'class': 'form-control' } }) }}
+                            {{ form_widget(form.github, { 'attr': {'placeholder': 'https://github.com/' } }) }}
                         </div>
+                        {{ form_errors(form.github) }}
                     </div>
                     <div class="col-lg-4 form-group">
-                        <div class="input-group">
+                        <div class="input-group {% if form.stackOverflow.vars.errors %}has-error{% endif %}">
                             <span class="input-group-addon"><i class="fa fa-stack-overflow"></i></span>
-                            {{ form_widget(form.stackOverflow, { 'attr': {'placeholder': 'https://stackoverflow.com/', 'class': 'form-control' } }) }}
+                            {{ form_widget(form.stackOverflow, { 'attr': {'placeholder': 'https://stackoverflow.com/' } }) }}
                         </div>
+                        {{ form_errors(form.stackOverflow) }}
                     </div>
                 </div>
             </fieldset>
@@ -111,7 +120,9 @@
 {% macro inputTextarea(formItem, helpText) %}
     <div class="row">
         <div class="col-lg-12 form-group">
-            {{ form_row(formItem, { 'attr': {'class': 'form-control', 'rows':'6' } }) }}
+            <div class="{% if formItem.vars.errors %}has-error{% endif %}">
+                {{ form_row(formItem, { 'attr': { 'rows':'6' } }) }}
+            </div>
             <span class="help-block">{{ helpText }}?</span>
         </div>
     </div>

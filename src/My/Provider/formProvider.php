@@ -81,36 +81,42 @@ class FormProvider {
             ))
             ->add('linkedIn', 'text', array(
                 'required' => false,
+                'label' => false,
                 'constraints' => array(
                     new Assert\Url()
                 )
             ))
             ->add('facebook', 'text', array(
                 'required' => false,
+                'label' => false,
                 'constraints' => array(
                     new Assert\Url()
                 )
             ))
             ->add('twitter', 'text', array(
                 'required' => false,
+                'label' => false,
                 'constraints' => array(
                     new Assert\Url()
                 )
             ))
             ->add('bitbucket', 'text', array(
                 'required' => false,
+                'label' => false,
                 'constraints' => array(
                     new Assert\Url()
                 )
             ))
             ->add('github', 'text', array(
                 'required' => false,
+                'label' => false,
                 'constraints' => array(
                     new Assert\Url()
                 )
             ))
             ->add('stackOverflow', 'text', array(
                 'required' => false,
+                'label' => false,
                 'constraints' => array(
                     new Assert\Url()
                 )

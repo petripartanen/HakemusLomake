@@ -28,27 +28,31 @@ body {
     display: none;
 }
 
+.has-error .input-group-addon {
+  border-color: #e74c3c;
+}
+
 .well {
-    background-color: rgba(0,0,0,0.04);
+  background-color: rgba(0,0,0,0.04);
 }
 
 .navbar-default .navbar-nav>.active>a,
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
-    background-color: #18bc9c;
+  background-color: #18bc9c;
 }
 
 [placeholder]::-webkit-input-placeholder {
-    color: #dddddd;
+  color: #dddddd;
 }
 [placeholder]:-moz-placeholder {
-    color: #dddddd;
+  color: #dddddd;
 }
 [placeholder]::-moz-placeholder {
-    color: #dddddd;
+  color: #dddddd;
 }
 [placeholder]:-ms-input-placeholder {
-    color: #dddddd;
+  color: #dddddd;
 }
 
 

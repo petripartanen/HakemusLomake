@@ -44,7 +44,7 @@ $app->match('/fill/', function (Request $request) use ($app) {
 });
 
 $app->get('/success/', function () use ($app) {
-    return $app['twig']->render('submitted/success.html.twig');
+    return $app['twig']->render('fill/success.html.twig');
 });
 
 return $app;
