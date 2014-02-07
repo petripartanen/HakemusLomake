@@ -1,26 +1,9 @@
 <?php
-use Silex\Provider\FormServiceProvider;
-use Silex\Provider\TranslationServiceProvider;
-use Silex\Provider\ValidatorServiceProvider;
 use Symfony\Component\HttpFoundation\Request;
-
 use My\Provider\FormProvider;
 
+/* defines $app variable as silex application */
 require_once __DIR__ . '/bootstrap.php';
-
-
-$app = new Silex\Application();
-
-$app->register(new FormServiceProvider());
-$app->register(new TranslationServiceProvider(), array(
-    'locale_fallbacks' => array('fi'),
-));
-$app->register(new Silex\Provider\ValidatorServiceProvider());
-
-$app->register(new Silex\Provider\TwigServiceProvider(), array(
-    'twig.path' => __DIR__ . '/../src/My/resources/views',
-));
-$app['debug'] = true;
 
 $app->get('/', function () use ($app) {
 
