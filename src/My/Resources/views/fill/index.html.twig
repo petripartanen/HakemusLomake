@@ -70,8 +70,9 @@
 
         $('#closeErrorModal').click(function() {
             $('#errorInFillingForm').modal('hide');
-            var aTag = $("div[class='has-error']");
-            $('html,body').animate({scrollTop: aTag.offset().top},'slow');
+            var confictElement = $("div[class~='has-error']:first");
+            $("div[class~='has-error']:first [name^='form']").focus();
+            $('body').animate({scrollTop: confictElement.offset().top},'slow');
         });
     });
 {% endblock %}
