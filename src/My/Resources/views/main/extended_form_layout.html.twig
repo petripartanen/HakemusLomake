@@ -60,6 +60,8 @@
             {%- elseif attrvalue is not sameas(false) -%}
                 {% if attrname is sameas('class') %}
                     {{- attrname }}="{{ attrvalue ~ ' form-control' }}"
+                {% else %}
+                    {{- attrname }}="{{ attrvalue }}"
                 {% endif %}
             {%- endif -%}
         {%- endfor -%}
