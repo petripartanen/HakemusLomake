@@ -50,3 +50,18 @@ body {
 [placeholder]:-ms-input-placeholder {
     color: #dddddd;
 }
+
+
+.backButton {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  opacity: 0.9;
+  width: 100%;
+}
+.backButton:hover {
+  opacity: 1;
+}
+.backButton i {
+  font-size: 4em;
+}
