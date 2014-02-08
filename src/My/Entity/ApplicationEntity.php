@@ -5,13 +5,16 @@ use Symfony\Component\Validator\Constraints as Assert;
 
 class ApplicationEntity
 {
-    static $tableName = 'Applicaton';
+    static $TABLENAME = 'Applicaton';
+    static $PRIMARYKEY = 'PK';
+    static $UNIQUEVALUE = 'UQ';
 
     public function getAttributes()
     {
         return array(
             'id' => array(
                 'databaseConfigurations' => array(
+                    self::$PRIMARYKEY,
                     'data_type' => 'integer',
                     'column_options' => array(
                         "unsigned" => true,
@@ -39,7 +42,7 @@ class ApplicationEntity
             'studentgroup' => array(
                 'type' => 'text',
                 'options' => array(
-                    'label' => 'from.field.group.label',
+                    'label' => 'from.field.studentgroup.label',
                     'constraints' => array(
                         new Assert\NotBlank(array(
                             'message' => 'form.errors.notBlank'
@@ -64,6 +67,7 @@ class ApplicationEntity
                     )
                 ),
                 'databaseConfigurations' => array(
+                    self::$UNIQUEVALUE,
                     'data_type' => 'string'
                 )
             ),

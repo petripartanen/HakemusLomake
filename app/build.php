@@ -19,7 +19,7 @@ foreach ($schemaManager->listTables() as $table) {
 $applicationEntity = new ApplicationEntity();
 
 $schema = new Schema();
-$applications = $schema->createTable(ApplicationEntity::$tableName);
+$applications = $schema->createTable(ApplicationEntity::$TABLENAME);
 
 
 foreach ($applicationEntity->getAttributes() as $key => $options) {
@@ -30,9 +30,13 @@ foreach ($applicationEntity->getAttributes() as $key => $options) {
     } else {
         $applications->addColumn($key, $databaseConfigurations['data_type']);
     }
+    if (in_array(ApplicationEntity::$PRIMARYKEY, $databaseConfigurations) && !$applications->hasPrimaryKey()) {
+        $applications->setPrimaryKey(array($key));
+    }
+    if (in_array(ApplicationEntity::$UNIQUEVALUE, $databaseConfigurations)) {
+        $applications->addUniqueIndex(array($key));
+    }
 }
-
-$applications->setPrimaryKey(array("id"));
 
 $queries = $schema->toSql(
     $connection->getDatabasePlatform()
@@ -40,17 +44,19 @@ $queries = $schema->toSql(
 foreach ($queries as $query) {
     $connection->executeQuery($query);
 }
-$connection->executeQuery("ALTER TABLE `hakemus`.`".ApplicationEntity::$tableName."`
-    CHANGE COLUMN `id` `id` INT(10) UNSIGNED NOT NULL AUTO_INCREMENT ,
+
+/* HOTFIT: Please fix, TODO: aseta somen tiedot nulleiksi */
+$connection->executeQuery("ALTER TABLE `hakemus`.`".ApplicationEntity::$TABLENAME."`
     CHANGE COLUMN `linkedIn` `linkedIn` VARCHAR(255) CHARACTER SET 'utf8' COLLATE 'utf8_unicode_ci' NULL ,
     CHANGE COLUMN `facebook` `facebook` VARCHAR(255) CHARACTER SET 'utf8' COLLATE 'utf8_unicode_ci' NULL ,
     CHANGE COLUMN `twitter` `twitter` VARCHAR(255) CHARACTER SET 'utf8' COLLATE 'utf8_unicode_ci' NULL ,
     CHANGE COLUMN `bitbucket` `bitbucket` VARCHAR(255) CHARACTER SET 'utf8' COLLATE 'utf8_unicode_ci' NULL ,
     CHANGE COLUMN `github` `github` VARCHAR(255) CHARACTER SET 'utf8' COLLATE 'utf8_unicode_ci' NULL ,
     CHANGE COLUMN `stackOverflow` `stackOverflow` VARCHAR(255) CHARACTER SET 'utf8' COLLATE 'utf8_unicode_ci' NULL ;
-    ADD UNIQUE INDEX `userid_UNIQUE` (`userid` ASC);
+    CHANGE COLUMN `id` `id` INT(10) UNSIGNED NOT NULL AUTO_INCREMENT ;
 ");
+
 $createdTables = $schemaManager->listTables();
 if (count($createdTables) > 0) {
-    echo 'Kanta päivitys onnistui:' . count($createdTables) . ' taulua ja ' . count($schemaManager->listTableColumns(ApplicationEntity::$tableName)) . 'saraketta luotu.' . "\r\n";
+    echo 'Kanta päivitys onnistui:' . count($createdTables) . ' taulua ja ' . count($schemaManager->listTableColumns(ApplicationEntity::$TABLENAME)) . 'saraketta luotu.' . "\r\n";
 }

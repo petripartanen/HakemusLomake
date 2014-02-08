@@ -14,6 +14,6 @@ class ApplicationRepository {
     }
 
     public function flush($data) {
-        $this->databaseManager->insert(ApplicationEntity::$tableName, $data);
+        $this->databaseManager->insert(ApplicationEntity::$TABLENAME, $data);
     }
 } 
