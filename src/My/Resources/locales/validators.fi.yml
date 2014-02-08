@@ -1,4 +1,4 @@
-from:
+form:
     errors:
         notBlank: Tämä on pakollinen tieto
         email: Kentän tulee olla hyväksyttävä sähköpostiosoite

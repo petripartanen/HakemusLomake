@@ -19,13 +19,10 @@ $app->register(new TranslationServiceProvider(), $configs['TranslationServicePro
 $app->register(new TwigServiceProvider(), $configs['TwigServiceProvider']);
 $app->register(new DoctrineServiceProvider(), $configs['DoctrineServiceProvider']);
 
-
-$app['translator'] = $app->share($app->extend('translator', function ($translator, $app) use ($configs) {
+$app['translator'] = $app->share($app->extend('translator', function ($translator) use ($configs) {
     $translator->addLoader('yaml', new YamlFileLoader());
-
-    foreach ($configs['Translations'] as $language => $location) {
-        $translator->addResource('yaml', $location, $language);
-    }
+    $translator->addResource('yaml', __DIR__ .'/../src/My/Resources/locales/messages.fi.yml', 'fi', 'messages');
+    $translator->addResource('yaml', __DIR__.'/../src/My/Resources/locales/validators.fi.yml', 'fi', 'validators');
 
     return $translator;
 }));

@@ -1,9 +1,7 @@
-<?php return array(
+<?php
+return array(
     'App' => array(
         'debug' => true
-    ),
-    'Translations' => array(
-        'fi' => __DIR__ . '/../src/My/Resources/locales/messages.fi.yml'
     ),
     'TranslationServiceProvider' => array(
         'locale_fallbacks' => array('fi'),
