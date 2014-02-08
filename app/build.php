@@ -58,5 +58,5 @@ $connection->executeQuery("ALTER TABLE `hakemus`.`".ApplicationEntity::$TABLENAM
 
 $createdTables = $schemaManager->listTables();
 if (count($createdTables) > 0) {
-    echo 'Kanta päivitys onnistui:' . count($createdTables) . ' taulua ja ' . count($schemaManager->listTableColumns(ApplicationEntity::$TABLENAME)) . 'saraketta luotu.' . "\r\n";
+    echo 'Kanta päivitys onnistui: ' . count($createdTables) . ' taulua ja ' . count($schemaManager->listTableColumns(ApplicationEntity::$TABLENAME)) . ' saraketta luotu.' . "\r\n";
 }
