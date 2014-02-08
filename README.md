@@ -5,11 +5,11 @@ Pohjana bootstrap ja http://bootswatch.com/flatly/ teema.
 
 Asennus:
 -------------
-# cd ~/www/HakemusLomake
-# npm install
-# php composer.phar install
-# grunt
-# php /app/build.php (rakentaa taulut, mutta vaatii tietokannan olemassaolon.)
+1. cd ~/www/HakemusLomake
+2. npm install
+3. php composer.phar install
+4. grunt
+5. php /app/build.php (rakentaa taulut, mutta vaatii tietokannan olemassaolon.)
 
 Hassu paikkaus build.php:ssä not null ja autoingrement eivät toimi :D Keksi näille jotain...
 
