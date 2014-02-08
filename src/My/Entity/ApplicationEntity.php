@@ -3,11 +3,22 @@ namespace My\Entity;
 
 use Symfony\Component\Validator\Constraints as Assert;
 
-class Application
+class ApplicationEntity
 {
+    static $tableName = 'Applicaton';
+
     public function getAttributes()
     {
         return array(
+            'id' => array(
+                'databaseConfigurations' => array(
+                    'data_type' => 'integer',
+                    'column_options' => array(
+                        "unsigned" => true,
+                        "AUTO_INCREMENT" => true
+                    )
+                )
+            ),
             'fullName' => array(
                 'type' => 'text',
                 'options' => array(
@@ -25,7 +36,7 @@ class Application
                     )
                 )
             ),
-            'group' => array(
+            'studentgroup' => array(
                 'type' => 'text',
                 'options' => array(
                     'label' => 'from.field.group.label',

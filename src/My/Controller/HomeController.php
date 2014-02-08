@@ -1,6 +1,7 @@
 <?php
 namespace My\Controller;
 
+use My\Repository\ApplicationRepository;
 use Silex\Application;
 use Symfony\Component\HttpFoundation\Request;
 use My\Provider\FormProvider;
@@ -13,16 +14,9 @@ class HomeController {
 
         $applicationForm->handleRequest($request);
 
-        if ($applicationForm->isValid()) {
-            $data = $applicationForm->getData();
-
-            return $app->redirect('/success/');
-        }
-        else {
-            return $app['twig']->render('home/index.html.twig', array(
-                'applicationForm' => $applicationForm->createView()
-            ));
-        }
+        return $app['twig']->render('home/index.html.twig', array(
+            'applicationForm' => $applicationForm->createView()
+        ));
     }
 
     public function fill(Request $request, Application $app) {
@@ -34,6 +28,10 @@ class HomeController {
         if ($applicationForm->isValid()) {
             $data = $applicationForm->getData();
 
+            $data = $applicationForm->getData();
+            $applicationRepository = new ApplicationRepository($app);
+
+            $applicationRepository->flush($data);
             return $app->redirect('/success/');
         }
         else {

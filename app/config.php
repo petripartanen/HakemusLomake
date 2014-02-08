@@ -12,7 +12,7 @@
         'twig.path' => __DIR__ . '/../src/My/Resources/views'
     ),
     'DoctrineServiceProvider' => array(
-        'dbs.options' => array(
+        'db.options' => array(
             'driver' => 'pdo_mysql',
             'host' => 'localhost',
             'dbname' => 'hakemus',
