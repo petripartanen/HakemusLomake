@@ -20,6 +20,7 @@ TODO:
 1. Refactroi koodia, menny vähän sekavaksi, kun niin paljon muutoksia
 2. Twig -tiedostoissa kuraa, poista/siivoa
 3. Korjaa build.php
+4. formin validaattorien translatiot
 
 
 
