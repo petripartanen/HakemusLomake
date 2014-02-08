@@ -9,7 +9,8 @@ Asennus:
 2. npm install
 3. php composer.phar install
 4. grunt
-5. php /app/build.php (rakentaa taulut, mutta vaatii tietokannan olemassaolon.)
+5. bower install
+6. php /app/build.php (rakentaa taulut, mutta vaatii tietokannan olemassaolon.)
 
 Hassu paikkaus build.php:ssä not null ja autoingrement eivät toimi :D Keksi näille jotain...
 
