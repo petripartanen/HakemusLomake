@@ -6,19 +6,17 @@
     <div class="well">
         <fieldset>
             <legend>Yhteystiedot</legend>
-            <div class="row">
-                <div class="col-sm-6 form-group {% if form.fullName.vars.errors %}has-error{% endif %}">
+            <div class="col-sm-6">
+                <div class="form-group {% if form.fullName.vars.errors %}has-error{% endif %}">
                     {{ form_row(form.fullName, { 'attr': {'placeholder': 'Kimmo Koodari' } }) }}
                 </div>
-                <div class="col-sm-6 form-group {% if form.studentgroup.vars.errors %}has-error{% endif %}">
+                <div class="form-group {% if form.studentgroup.vars.errors %}has-error{% endif %}">
                     {{ form_row(form.studentgroup, { 'attr': {'placeholder': 'TT12S1E' } }) }}
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-6 form-group {% if form.userid.vars.errors %}has-error{% endif %}">
+                <div class="form-group {% if form.userid.vars.errors %}has-error{% endif %}">
                     {{ form_row(form.userid, { 'attr': {'placeholder': 'kimmoko' } }) }}
                 </div>
-                <div class="col-sm-6 form-group {% if form.email.vars.errors %}has-error{% endif %}">
+                <div class="form-group {% if form.email.vars.errors %}has-error{% endif %}">
                     {{ form_row(form.email, { 'attr': {'placeholder': 'kimmo.koodari@metropolia.fi' } }) }}
                 </div>
             </div>

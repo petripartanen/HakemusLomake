@@ -31,7 +31,7 @@
     <script>
         {% block javascript %}
             {% if hideNavBar is not defined %}
-                $('body').scrollspy({ target: '.main-navbar' });
+                $('body').scrollspy({ target: '.main-navbar', offset: 60 });
             {% endif %}
         {% endblock %}
     </script>
