@@ -1,3 +1,6 @@
-This value should not be blank.: Tämä on pakollinen tieto
-This value is not a valid URL.: Tämä pitää olla URL-osoite
-This value is not valid.: Sivun tulee olla oikea
+from:
+    errors:
+        notBlank: Tämä on pakollinen tieto
+        email: Kentän tulee olla hyväksyttävä sähköpostiosoite
+        url: Tämä pitää olla URL-osoite
+        regex: Sivun tulee olla oikea

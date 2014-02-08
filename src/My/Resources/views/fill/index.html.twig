@@ -66,7 +66,10 @@
         $('#continue-filling').hide();
         $('.rest-of-the-form').show()
         $('#back-to-home').tooltip();
-        $('#errorInFillingForm').modal('show');
+
+        if ($("div[class~='has-error']:first").length > 0) {
+            $('#errorInFillingForm').modal('show');
+        }
 
         $('#closeErrorModal').click(function() {
             $('#errorInFillingForm').modal('hide');

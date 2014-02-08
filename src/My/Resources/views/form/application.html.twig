@@ -1,7 +1,7 @@
 {% form_theme form 'main/extended_form_layout.html.twig' %}
 {% import _self as forms %}
 
-<form role="form" method="post" action="/fill/">
+<form role="form" method="post" action="/fill/" novalidate="novalidate">
     {{ form_errors(form) }}
     <div class="well">
         <fieldset>
@@ -123,7 +123,7 @@
             <div class="{% if formItem.vars.errors %}has-error{% endif %}">
                 {{ form_row(formItem, { 'attr': {'rows':'6' } }) }}
             </div>
-            <span class="help-block">{{ helpText }}?</span>
+            <span class="help-block">{{ ('from.field.' ~ formItem.vars.name ~'.helpText')|trans }}</span>
         </div>
     </div>
 {% endmacro %}

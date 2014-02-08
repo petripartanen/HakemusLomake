@@ -4,7 +4,7 @@
     {% spaceless %}
         {% if errors|length > 0 %}
             {% for error in errors %}
-                <span class="label label-danger">{{ error.message|trans }}</span>
+                <span class="label label-danger">{{ error.message|trans({}, translation_domain) }}</span>
             {% endfor %}
         {% endif %}
     {% endspaceless %}

@@ -1,0 +1,34 @@
+from:
+    field:
+        fullname:
+            label: Nimesi
+        group:
+            label: Ryhmätunnus
+        userid:
+            label: Tuubitunnus
+        email:
+            label: moi
+        studies:
+            label: Opinnot
+            helpText: Missä olet aiemmin opiskellut ja mitä ohjelmointia tukevia opintoja olet jo suorittanut?
+        experiences:
+            label: Kokemukset
+            helpText: Oletko aiemmin tehnyt verkkosivustoja? Jos olet, mitä?
+        alternativeExperiences:
+            label: Erikoiskokemukset
+            helpText: Missä työtehtävissä olet aiemmin toiminut? Onko sinulla kokemusta projektissa työskentelystä?
+        programming:
+            label: ohjelmointi
+            helpText: Kerro lyhyesti, mitä ajattelet ohjelmoinnista työnä? Mitä se merkitsee sinulle?
+        meAsProgrammer:
+            label: minä ohjelmoijana
+            helpText: Kuvaile lyhyesti, millainen olet ohjelmoijana
+        skills:
+            label: taidot
+            helpText: Omaatko jotain muita taitoja/ominaisuuksia, kuten esimerkiksi muut ohjelmointikielet, kuvankäsittelyä, johtamis- tai ryhmätyöskentelytaitoja, jotka koet auttavan sinua ja muita työtehtävissäsi?
+        whyWorkHere:
+            label: Miksi töihin?
+            helpText: Perustele lyhyesti, miksi juuri sinut tulisi valita?
+        also:
+            label: mitä vielä?
+            helpText: Perustele lyhyesti, miksi juuri sinut tulisi valita?

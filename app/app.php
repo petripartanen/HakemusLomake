@@ -1,6 +1,4 @@
 <?php
-use Symfony\Component\HttpFoundation\Request;
-use My\Provider\FormProvider;
 
 /* defines $app variable as silex application */
 require_once __DIR__ . '/bootstrap.php';
